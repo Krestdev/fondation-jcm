@@ -1,7 +1,19 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 
 export default function Home() {
   return (
-    <div>test</div>
+    <main>
+      <header className="max-w-screen-xl mx-auto w-full px-7 text-center vertical-pad flex flex-col gap-5 items-center">
+        <h1>{"Un geste pour "}<span className="text-primary">{"sauver des vies"}</span>{"."}</h1>
+        <p className="text-gray-600 max-w-screen-md text-sm sm:text-base lg:text-lg xl:text-xl">{`Avec la Fondation Jeanne Caroline MFEGE un don pour la santé est une contribution précieuse qui cultive le bien-être et répand l'espoir.`}</p>
+        <div className="flex flex-wrap gap-4 items-center justify-center">
+          <Link href={"/a-propos"}><Button size={"main"}>{"À Propos de la fondation"}</Button></Link>
+          <Link href={"/#don"}><Button size={"main"} variant={"outline"}>{"Faire un don"}<ArrowRight size={20} className="text-secondary" /></Button></Link>
+        </div>
+      </header>
+    </main>
   );
 }
