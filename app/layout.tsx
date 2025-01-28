@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={cn("min-h-screen antialiased font-sans", manrope.variable, bricolageFont.variable)}
+        className={cn("min-h-screen antialiased font-sans", manrope, bricolageFont)}
       >
         <Navbar/>
         {children}
