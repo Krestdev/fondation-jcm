@@ -14,10 +14,10 @@ export default function Home() {
           <Link href={"/#don"}><Button size={"main"} variant={"outline"}>{"Faire un don"}<ArrowRight size={20} className="text-secondary" /></Button></Link>
         </div>
       </header>
-      <div className="mx-auto max-w-(--breakpoint-xl) grid grid-cols-1 sm:grid-cols-3 gap-10 transform-3d perspective-distant">
-        <div className=" translate-3d scale-x-100 scale-y-125 scale-z-150 rotate-y-[40deg] w-full h-auto aspect-[4/3] overflow-hidden"><img src="https://images.pexels.com/photos/6647117/pexels-photo-6647117.jpeg" alt="image" className="rounded-md w-full h-full object-cover" /></div>
-        <div className=" translate-3d translate-z-[-50px] scale-x-100 scale-100 w-full h-auto aspect-[4/3] "><img src="https://images.pexels.com/photos/6647117/pexels-photo-6647117.jpeg" alt="image" className="w-full h-auto aspect-[4/3] object-cover" /></div>
-        <div className="-translate-z-0 -rotate-y-[10deg] w-full h-auto aspect-[4/3] overflow-hidden"><img src="https://images.pexels.com/photos/6647117/pexels-photo-6647117.jpeg" alt="image" className="w-full h-auto aspect-[4/3] object-cover" /></div>
+      <div className="scene">
+        <div className="image-container"><img src="/images/1.jpg" alt="image"/></div>
+        <div className="image-container"><img src="/images/2.jpg" alt="image"/></div>
+        <div className="image-container"><img src="/images/3.jpg" alt="image"/></div>
       </div>
     </main>
   );
