@@ -31,7 +31,7 @@ function Navbar() {
                     </SheetHeader>
                     <div role="list" className='flex flex-col'>
                         {navlinks.map((link, i)=><SheetClose asChild key={i}><Link href={link.href}><Button variant={"ghost"} className='h-14 text-lg'>{link.name}</Button></Link></SheetClose>)}
-                        <SheetClose asChild><Link href={"/#don"}><Button size={"main"}>{"Faire un don"}<ArrowRight size={20}/></Button></Link></SheetClose>
+                        <SheetClose asChild><Link href={"/#don"}><Button size={"main"}>{"Faire un don"}<ArrowRight size={20} strokeWidth={3}/></Button></Link></SheetClose>
                     </div>
                 </SheetContent>
             </Sheet>

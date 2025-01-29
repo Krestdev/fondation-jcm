@@ -183,10 +183,13 @@
     @apply bg-background text-foreground font-sans;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold font-primary;
+    @apply font-semibold font-primary tracking-tighter;
   }
   h1 {
-    @apply text-4xl sm:text-5xl lg:text-6xl xl:text-7xl tracking-tighter;
+    @apply font-bold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl;
+  }
+  h2 {
+    @apply text-3xl sm:text-4xl lg:text-5xl;
   }
 }
 
@@ -213,5 +216,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  .caption-title {
+    @apply text-sm sm:text-base font-medium before:content-["~"] inline-flex gap-2 after:content-["~"] text-primary;
   }
 }
