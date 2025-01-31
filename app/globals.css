@@ -177,7 +177,7 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border scroll-smooth;
   }
   body {
     @apply bg-background text-foreground font-sans;
@@ -190,6 +190,9 @@
   }
   h2 {
     @apply text-3xl sm:text-4xl lg:text-5xl;
+  }
+  h3 {
+    @apply text-2xl sm:text-3xl;
   }
   h4 {
     @apply text-lg sm:text-xl;
@@ -226,7 +229,10 @@
   .caption-title {
     @apply text-sm sm:text-base font-medium before:content-["~"] inline-flex gap-2 after:content-["~"] text-primary;
   }
-  .carousel-btn {
-    @apply inline-flex items-center justify-center size-14 rounded-full border text-secondary hover:cursor-pointer;
+  .carousel-item-title{
+    @apply text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-primary;
+  }
+  .carousel-item-description{
+    @apply text-lg sm:text-xl text-slate-600;
   }
 }

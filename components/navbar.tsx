@@ -9,7 +9,7 @@ function Navbar() {
         {name: 'Accueil', href: '/'},
         {name: 'À propos', href: '/a-propos'},
         {name: 'Services', href: '/#services'},
-        {name: 'Gallerie', href: '/gallerie'},
+        {name: 'Galerie', href: '/galerie'},
         {name: 'Contact', href: '/contact'}
     ]
   return (
