@@ -1,3 +1,5 @@
+import { LightboxDataitem } from "@/components/lightbox";
+
 export const services = [
     {
       name: "Imagerie médicale",
@@ -45,10 +47,11 @@ export const services = [
   }
 
   export const contact = {
-    phone :"+237697060005"
+    phone :"+237697060005",
+    email : "infos@fondationjeannecarolinemfege.org"
   }
 
-  export const images = [
+  export const images:LightboxDataitem[] = [
     {
         src: "/images/galerie/1.webp",
         title: "Déboisement",
