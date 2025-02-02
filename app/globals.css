@@ -177,7 +177,7 @@
 
 @layer base {
   * {
-    @apply border-border scroll-smooth;
+    @apply border-border scroll-smooth ;
   }
   body {
     @apply bg-background text-foreground font-sans;
@@ -196,6 +196,12 @@
   }
   h4 {
     @apply text-lg sm:text-xl;
+  }
+  p {
+    @apply text-slate-600;
+  }
+  strong {
+    @apply text-primary;
   }
 }
 
@@ -240,5 +246,14 @@
   }
   .li-contact-span {
     @apply inline-flex text-white shrink-0 items-center justify-center size-14 bg-secondary rounded-md group-hover:bg-primary transition-all duration-300 ease-in-out;
+  }
+  .footer-link{
+    @apply px-3 py-2 capitalize font-primary text-base sm:text-lg text-slate-50 hover:text-primary transition-all duration-200 ease-in-out;
+  }
+  .list-icon-span{
+    @apply inline-flex shrink-0 items-center justify-center size-14 bg-primary/40 rounded-md;
+  }
+  .list-icon-secondary{
+    @apply inline-flex shrink-0 items-center justify-center size-14 bg-secondary/40 rounded-md
   }
 }

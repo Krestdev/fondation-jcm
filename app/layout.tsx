@@ -4,6 +4,7 @@ import {cn} from "@/lib/utils";
 import "./globals.css";
 import {config} from "./config"
 import Navbar from "@/components/navbar";
+import Footer from "../components/footer";
 
 const bricolageFont = Bricolage_Grotesque({
   variable: "--font-bricolage",
@@ -31,6 +32,7 @@ export default function RootLayout({
       >
         <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
