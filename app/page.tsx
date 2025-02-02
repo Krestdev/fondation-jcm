@@ -1,5 +1,6 @@
 "use client";
 import Lightbox from "@/components/lightbox";
+import Reveal, { RevealGroup } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 import { contact, donate, images } from "@/data/data";
 import { motion } from "framer-motion";
@@ -12,9 +13,8 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { MissionsSection } from "./a-propos/page";
+import Missions from "./a-propos/missions";
 import Services from "./services";
-import Reveal, { RevealGroup } from "@/components/reveal";
 
 export default function Home() {
 
@@ -131,7 +131,7 @@ export default function Home() {
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         />
       </div>
-      <MissionsSection />
+      <Missions/>
       <Services/>
       <section id="don" className="bg-secondary/10">
         <div className="container-base grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10">
