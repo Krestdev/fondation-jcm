@@ -50,17 +50,17 @@ export default function Home() {
       </RevealGroup>
       <div className="scene">
         <div className="image-container">
-          <Reveal x={-15} scale={0} delay={.25} duration={.75}>
+          <Reveal x={-15} scale={0} delay={.25} duration={1.2}>
             <img src="/images/galerie/team.webp" alt="image" />
           </Reveal>
         </div>
         <div className="image-container">
-          <Reveal scale={0} delay={.20} duration={.75} className="w-full h-full">
+          <Reveal scale={0} delay={.20} duration={1.2} className="w-full h-full">
             <img src="/images/galerie/3d.webp" alt="image" />
           </Reveal>
         </div>
         <div className="image-container">
-        <Reveal x={15} scale={0} delay={.35} duration={.75}>
+        <Reveal x={15} scale={0} delay={.35} duration={1.2}>
           <img src="/images/galerie/1.webp" alt="image" />
         </Reveal>
         </div>
