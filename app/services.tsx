@@ -29,7 +29,7 @@ function Services() {
   return (
     <RevealGroup tag="section"
         id="services"
-        className="container-base flex flex-col items-center gap-6 sm:gap-10"
+        className="container-base flex flex-col items-center gap-6 sm:gap-10 overflow-x-hidden"
         y={25} delayGap={.25}
       >
         <div className="flex flex-col items-center gap-6 text-center">
