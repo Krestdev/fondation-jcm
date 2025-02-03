@@ -91,9 +91,9 @@ jobs:
           lcd ./out
           cd /path/to/your/hostinger/directory
           mput *
-          bye
-          EOF
-
+          bye 
+          EOF
+          
   # Deployment job
   deploy:
     environment:
