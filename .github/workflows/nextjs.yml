@@ -89,7 +89,7 @@ jobs:
           ftp -inv $FTP_HOST <<EOF
           user $FTP_USERNAME $FTP_PASSWORD
           lcd ./out
-          cd /home/u178834828/domains/fondationjeannecarolinemfege.org/public_html/test
+          cd /domains/fondationjeannecarolinemfege.org/public_html/test
           mput *
           bye 
           EOF
