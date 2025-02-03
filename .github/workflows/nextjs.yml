@@ -85,8 +85,14 @@ jobs:
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         run: |
-          sudo apt-get install lftp
-          lftp -c "open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOST; mirror -R /home/u178834828/domains/fondationjeannecarolinemfege.org/public_html/test"
+          sudo apt-get install ftp
+          ftp -inv $FTP_HOST <<EOF
+          user $FTP_USERNAME $FTP_PASSWORD
+          lcd ./out
+          cd /path/to/your/hostinger/directory
+          mput *
+          bye
+          EOF
 
   # Deployment job
   deploy:
