@@ -4,25 +4,23 @@ import Reveal, { RevealGroup } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 import { contact, donate, images } from "@/data/data";
 import { motion } from "framer-motion";
-import {
-  ArrowRight,
-  CircleArrowRight,
-  Mail,
-  Phone,
-  Plus
-} from "lucide-react";
+import { ArrowRight, CircleArrowRight, Mail, Phone, Plus } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Missions from "./a-propos/missions";
 import Services from "./services";
 
 export default function Home() {
-
   const route = useRouter();
 
   return (
     <main>
-      <RevealGroup y={20} delay={0.2} delayGap={.30} className="container-base w-full px-7 text-center flex flex-col gap-5 items-center">
+      <RevealGroup
+        y={20}
+        delay={0.2}
+        delayGap={0.3}
+        className="container-base w-full px-7 text-center flex flex-col gap-5 items-center"
+      >
         <h1>
           {"Un geste pour "}
           <span className="text-primary">{"sauver des vies"}</span>
@@ -50,23 +48,33 @@ export default function Home() {
       </RevealGroup>
       <div className="scene">
         <div className="image-container">
-          <Reveal x={-15} scale={0} delay={.25} duration={1.2}>
-            <img src="/images/galerie/team.webp" alt="image" />
+          <Reveal x={-15} scale={0} delay={0.25} duration={1.2}>
+            <img src="images/galerie/team.webp" alt="image" />
           </Reveal>
         </div>
         <div className="image-container">
-          <Reveal scale={0} delay={.20} duration={1.2} className="w-full h-full">
-            <img src="/images/galerie/3d.webp" alt="image" />
+          <Reveal
+            scale={0}
+            delay={0.2}
+            duration={1.2}
+            className="w-full h-full"
+          >
+            <img src="images/galerie/3d.webp" alt="image" />
           </Reveal>
         </div>
         <div className="image-container">
-        <Reveal x={15} scale={0} delay={.35} duration={1.2}>
-          <img src="/images/galerie/1.webp" alt="image" />
-        </Reveal>
+          <Reveal x={15} scale={0} delay={0.35} duration={1.2}>
+            <img src="images/galerie/1.webp" alt="image" />
+          </Reveal>
         </div>
       </div>
       <div className="container-base relative overflow-clip">
-        <RevealGroup y={25} delay={0.2} delayGap={.2} className="flex flex-col gap-6 sm:gap-8 items-center">
+        <RevealGroup
+          y={25}
+          delay={0.2}
+          delayGap={0.2}
+          className="flex flex-col gap-6 sm:gap-8 items-center"
+        >
           <span className="caption-title">{"À Propos de la Fondation"}</span>
           <h2 className="text-center max-w-(--breakpoint-lg)">
             {
@@ -131,11 +139,16 @@ export default function Home() {
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         />
       </div>
-      <Missions/>
-      <Services/>
+      <Missions />
+      <Services />
       <section id="don" className="bg-secondary/10">
         <div className="container-base grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10">
-          <RevealGroup y={25} delay={0} delayGap={.25} className="flex flex-col gap-3">
+          <RevealGroup
+            y={25}
+            delay={0}
+            delayGap={0.25}
+            className="flex flex-col gap-3"
+          >
             <span className="caption-title mb-3">{"Donation"}</span>
             <h2>{"Faire un Don"}</h2>
             <p className="text-slate-600">
@@ -150,9 +163,13 @@ export default function Home() {
               </Button>
             </a>
           </RevealGroup>
-          <RevealGroup y={25} delayGap={.25} className="flex flex-col gap-10 px-5">
+          <RevealGroup
+            y={25}
+            delayGap={0.25}
+            className="flex flex-col gap-10 px-5"
+          >
             <div className="flex flex-col gap-3">
-              <img src="images/om.png" className="h-10 w-fit" />
+              <img src="images/om.png" alt="om" className="h-10 w-fit" />
               <div className="flex flex-col">
                 <h3>{"Orange Money"}</h3>
                 <p className="mt-1">{`Numero : ${donate.orangemoney}`}</p>
@@ -160,7 +177,11 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col gap-3">
-              <img src="images/virement.png" className="h-10 w-fit" />
+              <img
+                src="images/virement.png"
+                alt="virement"
+                className="h-10 w-fit"
+              />
               <div className="flex flex-col">
                 <h3>{"Virement Bancaire"}</h3>
                 <p className="mt-1">{`Numero de compte : ${donate.bankAccount}`}</p>
@@ -174,7 +195,12 @@ export default function Home() {
         id="galerie"
         className="container-base flex flex-col gap-6 sm:gap-10 items-center"
       >
-        <RevealGroup y={25} delayGap={.25} delay={.25} className="flex flex-col gap-6 items-center text-center max-w-(--breakpoint-lg)">
+        <RevealGroup
+          y={25}
+          delayGap={0.25}
+          delay={0.25}
+          className="flex flex-col gap-6 items-center text-center max-w-(--breakpoint-lg)"
+        >
           <span className="caption-title">{"La fondation en images"}</span>
           <h2>{"Suivez l'évolution de la fondation"}</h2>
           <p className="text-slate-600">
@@ -183,7 +209,12 @@ export default function Home() {
             }
           </p>
         </RevealGroup>
-        <RevealGroup x={25} delay={.25} delayGap={.25} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        <RevealGroup
+          x={25}
+          delay={0.25}
+          delayGap={0.25}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
+        >
           {images.slice(0, 3).map((data, i) => (
             <Lightbox key={i} data={data} />
           ))}
@@ -200,14 +231,21 @@ export default function Home() {
         </RevealGroup>
       </section>
       <section className="container-base grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-12">
-        <RevealGroup x={-25} delay={.25} delayGap={.30} className="flex flex-col gap-6">
+        <RevealGroup
+          x={-25}
+          delay={0.25}
+          delayGap={0.3}
+          className="flex flex-col gap-6"
+        >
           <span className="caption-title">{"Nous Contacter"}</span>
           <h2 className="max-w-(--breakpoint-lg)">
-            {
-              "Restons en contact: Ensemble, faisons la différence !"
-            }
+            {"Restons en contact: Ensemble, faisons la différence !"}
           </h2>
-          <p className="text-slate-600">{"Vous avez une question, souhaitez en savoir plus sur nos actions ou envisager un partenariat ? La Fondation Jeanne Caroline Mfege est à votre écoute."}</p>
+          <p className="text-slate-600">
+            {
+              "Vous avez une question, souhaitez en savoir plus sur nos actions ou envisager un partenariat ? La Fondation Jeanne Caroline Mfege est à votre écoute."
+            }
+          </p>
           <ul role="list" className="grid gap-4 mt-3">
             <li>
               <a href={`tel:${contact.phone}`} className="li-contact group">
@@ -215,12 +253,10 @@ export default function Home() {
                   <Phone size={24} />
                 </span>
                 <span className="flex flex-col">
-                  <p className="text-slate-600">
-                    {
-                      "Numéro de téléphone"
-                    }
-                  </p>
-                  <h4 className="group-hover:text-primary transition-colors duration-300 ease-in-out">{donate.orangemoney}</h4>
+                  <p className="text-slate-600">{"Numéro de téléphone"}</p>
+                  <h4 className="group-hover:text-primary transition-colors duration-300 ease-in-out">
+                    {donate.orangemoney}
+                  </h4>
                 </span>
               </a>
             </li>
@@ -230,19 +266,23 @@ export default function Home() {
                   <Mail size={24} />
                 </span>
                 <span className="flex flex-col">
-                  <p className="text-slate-600">
-                    {
-                      "Adresse Mail"
-                    }
-                  </p>
-                  <h4 className="group-hover:text-primary transition-colors duration-300 ease-in-out max-w-full overflow-hidden text-clip">{contact.email}</h4>
+                  <p className="text-slate-600">{"Adresse Mail"}</p>
+                  <h4 className="group-hover:text-primary transition-colors duration-300 ease-in-out max-w-full overflow-hidden text-clip">
+                    {contact.email}
+                  </h4>
                 </span>
               </a>
             </li>
           </ul>
         </RevealGroup>
-        <Reveal x={25} delay={.5}>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d127378.97158522412!2d11.719677!3d3.8970749999999996!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2scm!4v1738409512022!5m2!1sfr!2scm" className="border-0 w-full h-full rounded-xl" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"/>
+        <Reveal x={25} delay={0.5}>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d127378.97158522412!2d11.719677!3d3.8970749999999996!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2scm!4v1738409512022!5m2!1sfr!2scm"
+            className="border-0 w-full h-full rounded-xl"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </Reveal>
       </section>
     </main>
