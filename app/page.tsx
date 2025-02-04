@@ -152,7 +152,7 @@ export default function Home() {
           </RevealGroup>
           <RevealGroup y={25} delayGap={.25} className="flex flex-col gap-10 px-5">
             <div className="flex flex-col gap-3">
-              <img src="images/om.png" className="h-10 w-fit" />
+              <img src="images/om.png" className="h-10 w-auto object-contain object-left" />
               <div className="flex flex-col">
                 <h3>{"Orange Money"}</h3>
                 <p className="mt-1">{`Numero : ${donate.orangemoney}`}</p>
@@ -160,7 +160,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col gap-3">
-              <img src="images/virement.png" className="h-10 w-fit" />
+              <img src="images/virement.png" className="h-10 w-auto object-contain object-left" />
               <div className="flex flex-col">
                 <h3>{"Virement Bancaire"}</h3>
                 <p className="mt-1">{`Numero de compte : ${donate.bankAccount}`}</p>
