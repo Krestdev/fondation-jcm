@@ -9,7 +9,11 @@ function Footer() {
     <footer className="container-base xl:rounded-t-xl bg-slate-900 text-slate-50 py-10 sm:px-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
         <div className="flex flex-col gap-3 w-full">
-          <img src="logo-dark.png" className="h-20 w-fit" />
+          <img
+            src="/logo-dark.png"
+            alt="logo"
+            className="h-20 w-auto object-contain object-left"
+          />
           <h4>{"Foundation Jeanne Caroline Mfege"}</h4>
           <p className="font-primary text-sm md:text-base max-w-sm text-slate-300">
             {

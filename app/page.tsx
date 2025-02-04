@@ -169,7 +169,11 @@ export default function Home() {
             className="flex flex-col gap-10 px-5"
           >
             <div className="flex flex-col gap-3">
-              <img src="images/om.png" alt="om" className="h-10 w-fit" />
+              <img
+                src="images/om.png"
+                alt="om"
+                className="h-10 w-auto object-contain object-left"
+              />
               <div className="flex flex-col">
                 <h3>{"Orange Money"}</h3>
                 <p className="mt-1">{`Numero : ${donate.orangemoney}`}</p>
@@ -180,7 +184,7 @@ export default function Home() {
               <img
                 src="images/virement.png"
                 alt="virement"
-                className="h-10 w-fit"
+                className="h-10 w-auto object-contain object-left"
               />
               <div className="flex flex-col">
                 <h3>{"Virement Bancaire"}</h3>
