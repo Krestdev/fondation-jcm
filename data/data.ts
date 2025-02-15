@@ -1,4 +1,5 @@
-import { LightboxDataitem } from "@/components/lightbox";
+import { LightboxDataitem, LightBoxImage } from "./type";
+
 
 export const services = [
   {
@@ -57,67 +58,86 @@ export const contact = {
   email: "infos@fondationjeannecarolinemfege.org",
 };
 
-export const images: LightboxDataitem[] = [
+export const images: LightBoxImage[] = [
   {
     src: "images/galerie/1.webp",
     title: "Déboisement",
     description:
       "Début des travaux de terrassement par le déboisement de la zone",
+      id:1,
+      group: "terassement"
   },
   {
     src: "images/galerie/3d.webp",
     title: "La Future Fondation",
     description: "Modèle 3d de la fondation",
+    id: 7,
+    group: "à terme"
   },
   {
     src: "images/galerie/Accueil.webp",
     title: "Accueil de la fondation",
     description:
       "Avancé des travaux de construction de l'accueil de la fondation",
+      group: "en cours"
   },
   {
     src: "images/galerie/catepilar.webp",
     title: "Terrassement",
     description: "Début des travaux de terrassement",
+    id:0,
+    group: "terassement"
   },
   {
     src: "images/galerie/catepilar2.webp",
-    title: "Terrassement2",
+    title: "Terrassement Catepilar",
     description: "Suite des travaux de terrassement",
+    id:3,
+    group: "terassement"
   },
   {
     src: "images/galerie/Medecine-Generale.webp",
     title: "Bâtiment Médecine Générale",
     description: "Gros oeuvre du bâtiment de médecine générale",
+    group:"en cours"
   },
   {
     src: "images/galerie/catepilar3.webp",
-    title: "Terrassement3",
+    title: "Terrassement Catepilar",
     description: "Suite des travaux de terrassement",
+    id:2,
+    group: "terassement"
   },
   {
     src: "images/galerie/study.webp",
     title: "Etudes topographiques",
     description: "Equipe des études topographiques pour l'analyse du terrain",
+    id: 5,
+    group: "terassement"
   },
   {
     src: "images/galerie/team.webp",
     title: "Equipe topographique",
     description: "Equipe chargée de la réalisation de l'étude topographique",
+    id: 4,
+    group: "terassement"
   },
   {
     src: "images/galerie/Urgence.webp",
     title: "Bâtiment des urgences",
     description: "Gros oeuvre du bâtiment des urgences",
+    group: "en cours"
   },
   {
     src: "images/galerie/Vue-arriere.webp",
     title: "Bâtiment en construction",
     description: "Vue arrière des bâtiments de la fondation",
+    group: "en cours"
   },
   {
     src: "images/galerie/Vue-laterale2.webp",
     title: "Bâtiment en construction",
     description: "Vue laterale d'un des bâtiments de la fondation",
+    group: "en cours"
   },
 ];

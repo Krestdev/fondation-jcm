@@ -220,7 +220,7 @@ export default function Home() {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
         >
           {images.slice(0, 3).map((data, i) => (
-            <Lightbox key={i} data={data} />
+            <Lightbox key={i} {...data} />
           ))}
           {images.length > 3 && (
             <div
@@ -281,7 +281,7 @@ export default function Home() {
         </RevealGroup>
         <Reveal x={25} delay={0.5}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d127378.97158522412!2d11.719677!3d3.8970749999999996!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2scm!4v1738409512022!5m2!1sfr!2scm"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d14185.523631079952!2d11.836026955840595!3d3.87905469118663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zM8KwNTInNjAuMCJOIDExwrA0OSc2MC4wIkU!5e0!3m2!1sfr!2sde!4v1739616572891!5m2!1sfr!2sde"
             className="border-0 w-full h-full rounded-xl"
             allowFullScreen
             loading="lazy"

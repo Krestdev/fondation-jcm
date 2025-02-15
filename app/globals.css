@@ -256,4 +256,7 @@
   .list-icon-secondary{
     @apply inline-flex shrink-0 items-center justify-center size-14 bg-secondary/40 rounded-md
   }
+  .badge {
+    @apply px-3 h-10 rounded-md inline-flex items-center border border-slate-200 cursor-pointer capitalize text-sm text-slate-900 font-medium bg-transparent transition-all duration-300 ease-in-out hover:bg-slate-200;
+  }
 }
