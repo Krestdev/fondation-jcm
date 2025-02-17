@@ -101,7 +101,7 @@ function Page() {
         </RevealGroup>
         <Reveal x={25} delay={0.5} scale={0.5}>
           <img
-            src="images/galerie/study.webp"
+            src="images/values.webp"
             alt="image"
             className="w-full h-auto aspect-[4/3] rounded-lg object-cover"
           />

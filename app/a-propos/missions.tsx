@@ -59,7 +59,7 @@ export default function Missions() {
       </RevealGroup>
       <Reveal x={20} y={20} scale={0.5} delay={0.5} duration={1}>
         <img
-          src="images/galerie/Medecine-Generale.webp"
+          src="images/mission.webp"
           alt="image"
           className="w-full h-full object-cover rounded-xl"
         />
