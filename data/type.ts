@@ -5,7 +5,7 @@ export interface LightboxDataitem {
 }
 
 export type ImageGroup = {
-    group: "terassement"|"à terme"|"en cours";
+    group: "terassement"|"à terme"|"construction";
 }
 
 export interface LightBoxImage extends LightboxDataitem, ImageGroup {

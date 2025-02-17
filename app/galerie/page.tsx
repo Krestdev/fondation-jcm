@@ -7,7 +7,7 @@ import { sortLightboxImages } from "@/lib/utils";
 import React, { useMemo, useState } from "react";
 
 function Page() {
-  const groups:ImageGroup["group"][] = ["terassement","en cours","à terme"];
+  const groups:ImageGroup["group"][] = ["terassement","construction","à terme"];
   const [filter, setFilter] = useState<ImageGroup["group"]|undefined>()
   const filteredImages  = useMemo(()=>{
     if(!filter){

@@ -236,7 +236,7 @@
     @apply text-sm sm:text-base font-medium before:content-["~"] inline-flex gap-2 after:content-["~"] text-primary;
   }
   .carousel-item-title{
-    @apply text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-primary;
+    @apply text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-primary; /* text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-primary */
   }
   .carousel-item-description{
     @apply text-lg sm:text-xl text-slate-600;

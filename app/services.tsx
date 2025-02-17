@@ -50,14 +50,17 @@ function Services() {
             {services.map((service, i) => (
               <CarouselItem
                 key={i}
-                className={`basis-full sm:basis-1/2 lg:basis-1/3 flex flex-col gap-3 text-center opacity-30 transition-opacity duration-1000 ease-in-out ${
+                className={`basis-full sm:basis-1/2 lg:basis-1/3 flex flex-col gap-3 justify-between min-h-96 text-center opacity-30 transition-opacity duration-1000 ease-in-out ${
                   ++i === current && "opacity-100"
                 }`}
               >
-                <h3 className="carousel-item-title">{service.name}</h3>
-                <p className="carousel-item-description">
-                  {service.description}
-                </p>
+                <img src={service.imageURL} alt={service.name} className='w-full h-auto aspect-video rounded-2xl' />
+                <div className='flex flex-col gap-2'>
+                  <h3 className="carousel-item-title">{service.name}</h3>
+                  <p className="carousel-item-description">
+                    {service.description}
+                  </p>
+                </div>
               </CarouselItem>
             ))}
           </CarouselContent>

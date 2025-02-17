@@ -6,31 +6,37 @@ export const services = [
     name: "Imagerie médicale",
     description:
       "Examens pour un diagnostic précis grâce aux technologies d’imagerie avancées.",
+      imageURL: "/images/services/med2.webp"
   },
   {
     name: "Radiologie",
     description:
       "Services spécialisés pour l’identification et le suivi des pathologies.",
+      imageURL: "/images/services/med6.webp"
   },
   {
     name: "Pédiatrie",
     description:
       "Soins médicaux dédiés aux enfants pour leur santé et leur bien-être.",
+      imageURL: "/images/services/med4.webp"
   },
   {
     name: "Oncologie",
     description:
       "Prise en charge des patients atteints de cancer avec des traitements adaptés.",
+      imageURL: "/images/services/med1.webp"
   },
   {
     name: "Cardiologie",
     description:
       "Services pour le dépistage, la prévention et le traitement des maladies cardiaques.",
+      imageURL: "/images/services/med3.webp"
   },
   {
     name: "Médecine générale",
     description:
       "Consultations pour une gestion globale de la santé et des soins primaires.",
+      imageURL: "/images/services/med5.webp"
   },
 ];
 
@@ -79,7 +85,7 @@ export const images: LightBoxImage[] = [
     title: "Accueil de la fondation",
     description:
       "Avancé des travaux de construction de l'accueil de la fondation",
-      group: "en cours"
+      group: "construction"
   },
   {
     src: "images/galerie/catepilar.webp",
@@ -99,7 +105,7 @@ export const images: LightBoxImage[] = [
     src: "images/galerie/Medecine-Generale.webp",
     title: "Bâtiment Médecine Générale",
     description: "Gros oeuvre du bâtiment de médecine générale",
-    group:"en cours"
+    group:"construction"
   },
   {
     src: "images/galerie/catepilar3.webp",
@@ -126,18 +132,18 @@ export const images: LightBoxImage[] = [
     src: "images/galerie/Urgence.webp",
     title: "Bâtiment des urgences",
     description: "Gros oeuvre du bâtiment des urgences",
-    group: "en cours"
+    group: "construction"
   },
   {
     src: "images/galerie/Vue-arriere.webp",
-    title: "Bâtiment en construction",
+    title: "La Fondation en vue arrière",
     description: "Vue arrière des bâtiments de la fondation",
-    group: "en cours"
+    group: "construction"
   },
   {
     src: "images/galerie/Vue-laterale2.webp",
-    title: "Bâtiment en construction",
-    description: "Vue laterale d'un des bâtiments de la fondation",
-    group: "en cours"
+    title: "La Fondation en vue latérale",
+    description: "Vue laterale des bâtiments de la fondation",
+    group: "construction"
   },
 ];
