@@ -24,7 +24,6 @@ export default function Home() {
         <h1>
           {"Un geste pour "}
           <span className="text-primary">{"sauver des vies"}</span>
-          {"."}
         </h1>
         <p className="text-slate-600 max-w-(--breakpoint-md) text-sm sm:text-base lg:text-lg xl:text-xl">{`Bienvenue à la Fondation Jeanne Caroline MFEGE. Parce que chaque geste compte, ensemble, nous bâtissons un avenir où la santé est une priorité. Rejoignez-nous dans notre mission pour un impact durable.`}</p>
         <div className="flex flex-wrap gap-4 items-center justify-center">
@@ -49,7 +48,7 @@ export default function Home() {
       <div className="scene">
         <div className="image-container">
           <Reveal x={-15} scale={0} delay={0.25} duration={1.2}>
-            <img src="images/galerie/team.webp" alt="image" />
+            <img src="images/galerie/generated2.webp" alt="image" />
           </Reveal>
         </div>
         <div className="image-container">
@@ -64,7 +63,7 @@ export default function Home() {
         </div>
         <div className="image-container">
           <Reveal x={15} scale={0} delay={0.35} duration={1.2}>
-            <img src="images/galerie/1.webp" alt="image" />
+            <img src="images/galerie/Medecine-Generale.webp" alt="image" />
           </Reveal>
         </div>
       </div>

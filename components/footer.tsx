@@ -14,7 +14,7 @@ function Footer() {
             alt="logo"
             className="h-20 w-auto object-contain object-left"
           />
-          <h4>{"Foundation Jeanne Caroline Mfege"}</h4>
+          <h4>{"Fondation Jeanne Caroline Mfege"}</h4>
           <p className="font-primary text-sm md:text-base max-w-sm text-slate-300">
             {
               "Un don pour la santé, une contribution précieuse qui cultive le bien-être et répand l'espoir."
