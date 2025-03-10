@@ -1,6 +1,6 @@
 import Reveal, { RevealGroup } from "@/components/reveal";
 import { Hand, Handshake, Heart, Star } from "lucide-react";
-import Services from "../services";
+import Services from "../../services";
 import Missions from "./missions";
 
 function Page() {
