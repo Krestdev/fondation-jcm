@@ -9,9 +9,11 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Missions from "./a-propos/missions";
 import Services from "../services";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
   const route = useRouter();
+  const t = useTranslations("HomePage");
 
   return (
     <main>
@@ -22,20 +24,20 @@ export default function Home() {
         className="container-base w-full px-7 text-center flex flex-col gap-5 items-center"
       >
         <h1>
-          {"Un geste pour "}
-          <span className="text-primary">{"sauver des vies"}</span>
+          {t("mainTitle1")}
+          <span className="text-primary">{t("mainTitle2")}</span>
         </h1>
-        <p className="text-slate-600 max-w-(--breakpoint-md) text-sm sm:text-base lg:text-lg xl:text-xl">{`Bienvenue à la Fondation Jeanne Caroline MFEGE. Parce que chaque geste compte, ensemble, nous bâtissons un avenir où la santé est une priorité. Rejoignez-nous dans notre mission pour un impact durable.`}</p>
+        <p className="text-slate-600 max-w-(--breakpoint-md) text-sm sm:text-base lg:text-lg xl:text-xl">{t("subtitle")}</p>
         <div className="flex flex-wrap gap-4 items-center justify-center">
           <Link href={"/a-propos"}>
             <Button size={"main"}>
-              {"À Propos de la fondation"}
+              {t("aboutTitle")}
               <CircleArrowRight />
             </Button>
           </Link>
           <Link href={"/#don"}>
             <Button size={"main"} variant={"outline"}>
-              {"Faire un don"}
+              {t("donateButton")}
               <ArrowRight
                 size={20}
                 className="text-secondary"
@@ -48,7 +50,7 @@ export default function Home() {
       <div className="scene">
         <div className="image-container">
           <Reveal x={-15} scale={0} delay={0.25} duration={1.2}>
-            <img src="images/galerie/generated2.webp" alt="image" />
+            <img src="/images/galerie/generated2.webp" alt="image" />
           </Reveal>
         </div>
         <div className="image-container">
@@ -58,12 +60,12 @@ export default function Home() {
             duration={1.2}
             className="w-full h-full"
           >
-            <img src="images/galerie/3d.webp" alt="image" />
+            <img src="/images/galerie/3d.webp" alt="image" />
           </Reveal>
         </div>
         <div className="image-container">
           <Reveal x={15} scale={0} delay={0.35} duration={1.2}>
-            <img src="images/galerie/Medecine-Generale.webp" alt="image" />
+            <img src="/images/galerie/Medecine-Generale.webp" alt="image" />
           </Reveal>
         </div>
       </div>
@@ -74,15 +76,13 @@ export default function Home() {
           delayGap={0.2}
           className="flex flex-col gap-6 sm:gap-8 items-center"
         >
-          <span className="caption-title">{"À Propos de la Fondation"}</span>
+          <span className="caption-title">{t("aboutTitle")}</span>
           <h2 className="text-center max-w-(--breakpoint-lg)">
-            {
-              "La Fondation Jeanne Caroline Mfege tire son inspiration de la vie et des valeurs de Jeanne Caroline Mfege, une femme reconnue pour sa générosité et son dévouement."
-            }
+            {t("aboutDescription")}
           </h2>
           <Link href={"/a-propos"}>
             <Button size={"main"}>
-              {"Découvrir la fondation"}
+              {t("aboutMore")}
               <CircleArrowRight />
             </Button>
           </Link>
@@ -148,16 +148,14 @@ export default function Home() {
             delayGap={0.25}
             className="flex flex-col gap-3"
           >
-            <span className="caption-title mb-3">{"Donation"}</span>
-            <h2>{"Faire un Don"}</h2>
+            <span className="caption-title mb-3">{t("donatePre")}</span>
+            <h2>{t("donateButton")}</h2>
             <p className="text-slate-600">
-              {
-                "Soutenez la Fondation Jeanne Caroline Mfege dans sa mission de fournir des soins de santé accessibles et de qualité. Votre contribution, quelle que soit sa nature ou son montant, peut faire une réelle différence dans la vie des populations vulnérables."
-              }
+              {t("donateDescription")}
             </p>
             <a href={`tel:${contact.phone}`}>
               <Button size={"main"} className="w-fit mt-3">
-                {"Nous contacter"}
+                {t("contactUs")}
                 <Phone size={24} />
               </Button>
             </a>
@@ -169,25 +167,25 @@ export default function Home() {
           >
             <div className="flex flex-col gap-3">
               <img
-                src="images/om.png"
+                src="/images/om.png"
                 alt="om"
                 className="h-10 w-auto object-contain object-left"
               />
               <div className="flex flex-col">
                 <h3>{"Orange Money"}</h3>
-                <p className="mt-1">{`Numero : ${donate.orangemoney}`}</p>
-                <p>{`Nom du Compte : ${donate.omName}`}</p>
+                <p className="mt-1">{t("number")}{donate.orangemoney}</p>
+                <p>{t("accountName")}{donate.omName}</p>
               </div>
             </div>
             <div className="flex flex-col gap-3">
               <img
-                src="images/virement.png"
+                src="/images/virement.png"
                 alt="virement"
                 className="h-10 w-auto object-contain object-left"
               />
               <div className="flex flex-col">
-                <h3>{"Virement Bancaire"}</h3>
-                <p className="mt-1">{`Numero de compte : ${donate.bankAccount}`}</p>
+                <h3>{t("bankTransfer")}</h3>
+                <p className="mt-1">{t("accountName")}{donate.bankAccount}</p>
                 <p>{`IBAN : ${donate.iban}`}</p>
               </div>
             </div>
@@ -204,12 +202,10 @@ export default function Home() {
           delay={0.25}
           className="flex flex-col gap-6 items-center text-center max-w-(--breakpoint-lg)"
         >
-          <span className="caption-title">{"La fondation en images"}</span>
-          <h2>{"Suivez l'évolution de la fondation"}</h2>
+          <span className="caption-title">{t("galleryCaption")}</span>
+          <h2>{t("galleryTitle")}</h2>
           <p className="text-slate-600">
-            {
-              "Plongez au cœur des actions de la Fondation Jeanne Caroline Mfege à travers notre galerie. Explorez l’évolution de notre infrastructure en construction, un projet ambitieux destiné à offrir des soins de santé de qualité aux populations rurales."
-            }
+            {t("galleryDescription")}
           </p>
         </RevealGroup>
         <RevealGroup
@@ -240,14 +236,12 @@ export default function Home() {
           delayGap={0.3}
           className="flex flex-col gap-6"
         >
-          <span className="caption-title">{"Nous Contacter"}</span>
+          <span className="caption-title">{t("contactUs")}</span>
           <h2 className="max-w-(--breakpoint-lg)">
-            {"Restons en contact: Ensemble, faisons la différence !"}
+            {t("contactTitle")}
           </h2>
           <p className="text-slate-600">
-            {
-              "Vous avez une question, souhaitez en savoir plus sur nos actions ou envisager un partenariat ? La Fondation Jeanne Caroline Mfege est à votre écoute."
-            }
+            {t("contactDescription")}
           </p>
           <ul role="list" className="grid gap-4 mt-3">
             <li>
@@ -256,7 +250,7 @@ export default function Home() {
                   <Phone size={24} />
                 </span>
                 <span className="flex flex-col">
-                  <p className="text-slate-600">{"Numéro de téléphone"}</p>
+                  <p className="text-slate-600">{t("phone")}</p>
                   <h4 className="group-hover:text-primary transition-colors duration-300 ease-in-out">
                     {donate.orangemoney}
                   </h4>
@@ -269,7 +263,7 @@ export default function Home() {
                   <Mail size={24} />
                 </span>
                 <span className="flex flex-col">
-                  <p className="text-slate-600">{"Adresse Mail"}</p>
+                  <p className="text-slate-600">{t("mail")}</p>
                   <h4 className="group-hover:text-primary transition-colors duration-300 ease-in-out max-w-full overflow-hidden text-clip">
                     {contact.email}
                   </h4>

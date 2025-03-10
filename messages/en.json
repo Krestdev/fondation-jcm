@@ -1,0 +1,90 @@
+{
+  "Config": {
+    "siteName": "Jeanne Caroline Mfege Foundation",
+    "siteDescription": "The Jeanne Caroline MFEGE Foundation is committed to promoting education, health, and the empowerment of vulnerable communities in Africa. Discover our initiatives, social projects, and charitable actions for a better future. Join us to make a difference."
+  },
+  "HomePage": {
+    "title": "A gesture to save lives",
+    "mainTitle1": "A gesture to ",
+    "mainTitle2": "save lives",
+    "subtitle": "Welcome to the Jeanne Caroline MFEGE Foundation. Because every gesture matters, together we build a future where health is a priority. Join us in our mission for lasting impact.",
+    "donateButton": "Donate",
+    "aboutTitle": "About the Foundation",
+    "aboutDescription": "The Jeanne Caroline Mfege Foundation draws its inspiration from the life and values of Jeanne Caroline Mfege, a woman recognized for her generosity and dedication.",
+    "aboutMore": "Discover the foundation",
+    "donatePre": "Donation",
+    "donateDescription": "Support the Jeanne Caroline Mfege Foundation in its mission to provide accessible and quality healthcare. Your contribution, regardless of its nature or amount, can make a real difference in the lives of vulnerable populations.",
+    "contactUs": "Contact us",
+    "number": "Phone number: ",
+    "accountName": "Account Name: ",
+    "bankTransfer": "Bank Transfer",
+    "accountNumber": "Account Number: ",
+    "galleryCaption": "The foundation in pictures",
+    "galleryTitle": "Follow the foundation's progress",
+    "galleryDescription": "Immerse yourself in the actions of the Jeanne Caroline Mfege Foundation through our gallery. Explore the progress of our infrastructure under construction, an ambitious project aimed at providing quality healthcare to rural populations.",
+    "contactTitle": "Let's stay in touch: Together, let's make a difference!",
+    "contactDescription": "Do you have a question, want to learn more about our actions, or consider a partnership? The Jeanne Caroline Mfege Foundation is here to listen.",
+    "phone": "Phone number",
+    "mail": "Email Address"
+  },
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "donate": "Donate"
+  },
+  "Footer": {
+    "description": "A donation for health, a precious contribution that nurtures well-being and spreads hope.",
+    "rights": "All rights reserved",
+    "poweredBy": "Powered by "
+  },
+  "AboutPage": {
+    "description": "Together for quality healthcare and a healthier future",
+    "historyTitle": "Our History",
+    "the": "The ",
+    "historyDescription1": " was born from a story of resilience, faith, and love. On May 10, 2021, Jeanne Caroline MFEGE passed away from ovarian cancer after a long battle fought with courage and dignity. This ordeal, marked by periods of intense suffering and difficulties in accessing healthcare, was transcended by deep spirituality and trust in God.",
+    "historyDescription2": "It is in this spirit that her husband and loved ones wished to preserve her legacy by establishing a foundation dedicated to providing healthcare access for vulnerable populations. Driven by the ideals of solidarity and kindness that guided Jeanne Caroline, this initiative aims to offer essential healthcare services to those in greatest need.",
+    "ourMissions": "Our Missions",
+    "missionDescription": "Inspired by the life and commitment of Jeanne Caroline Mfege, the Foundation is dedicated to:",
+    "mission1Title": "Fighting Cancer",
+    "mission1Description": "Organizing regular screening campaigns for early detection of this silent disease.",
+    "mission2Title": "Improving Access to Healthcare",
+    "mission2Description": "Providing quality care to rural populations with limited mobility, complementing the efforts of the Cameroonian government.",
+    "mission3Title": "Supporting Local Communities",
+    "mission3Description": "Addressing the needs related to endemic diseases such as malaria and typhoid fever in surrounding villages.",
+    "valuesTitle": "Our Values",
+    "valuesDescription": "The foundation is built on strong values that guide our daily actions",
+    "values1": "Solidarity",
+    "values1Description": "Providing accessible healthcare to the most vulnerable.",
+    "values2": "Humanity",
+    "values2Description": "Welcoming every patient with compassion and respect.",
+    "values3": "Commitment",
+    "values3Description": "Serving with dedication to improve people's quality of life.",
+    "values4": "Excellence",
+    "values4Description": "Ensuring quality healthcare through professional medical services.",
+    "ourEngagement": "Our Commitment to Rural Populations",
+    "ourEngagementDescription": "The foundation works alongside government efforts to address the healthcare needs of rural populations. Many nearby villages (Ekiembié 2, Eyek, Ekiembié 1, Akekela, Zili, Ebolsi, Ngou, etc.) have limited access to healthcare infrastructure. We are committed to bridging this medical gap by establishing a local healthcare facility."
+  },
+  "Services": {
+    "title": "Our Services",
+    "description": "The foundation under construction aims to provide essential services to ensure comprehensive and high-quality healthcare for the community.",
+    "im": "Medical Imaging",
+    "imDescription": "Examinations for accurate diagnosis using advanced imaging technologies.",
+    "radio": "Radiology",
+    "radioDescription": "Specialized services for the identification and monitoring of pathologies.",
+    "pediatric": "Pediatrics",
+    "pediatricDescription": "Medical care dedicated to children for their health and well-being.",
+    "oncology": "Oncology",
+    "oncologyDescription": "Care for cancer patients with tailored treatments.",
+    "heart": "Cardiology",
+    "heartDescription": "Services for screening, prevention, and treatment of heart diseases.",
+    "medecine": "General Medicine",
+    "medecineDescription": "Consultations for overall health management and primary care."
+  },
+  "Gallery":{
+      "title":"Gallery",
+      "description":"Dive into the heart of the Jeanne Caroline Mfege Foundation's actions through our gallery. Explore the evolution of our infrastructure under construction, an ambitious project designed to offer quality healthcare to rural populations."
+}
+}

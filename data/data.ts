@@ -3,39 +3,33 @@ import { LightboxDataitem, LightBoxImage } from "./type";
 
 export const services = [
   {
-    name: "Imagerie médicale",
-    description:
-      "Examens pour un diagnostic précis grâce aux technologies d’imagerie avancées.",
+    name: "im",
+    description: "imDescription",
       imageURL: "/images/services/med2.webp"
   },
   {
-    name: "Radiologie",
-    description:
-      "Services spécialisés pour l’identification et le suivi des pathologies.",
+    name: "radio",
+    description: "radioDescription",
       imageURL: "/images/services/med6.webp"
   },
   {
-    name: "Pédiatrie",
-    description:
-      "Soins médicaux dédiés aux enfants pour leur santé et leur bien-être.",
+    name: "pediatric",
+    description: "pediatricDescription",
       imageURL: "/images/services/med4.webp"
   },
   {
-    name: "Oncologie",
-    description:
-      "Prise en charge des patients atteints de cancer avec des traitements adaptés.",
+    name: "oncology",
+    description: "oncologyDescription",
       imageURL: "/images/services/med1.webp"
   },
   {
-    name: "Cardiologie",
-    description:
-      "Services pour le dépistage, la prévention et le traitement des maladies cardiaques.",
+    name: "heart",
+    description: "heartDescription",
       imageURL: "/images/services/med3.webp"
   },
   {
-    name: "Médecine générale",
-    description:
-      "Consultations pour une gestion globale de la santé et des soins primaires.",
+    name: "medecine",
+    description: "medecineDescription",
       imageURL: "/images/services/med5.webp"
   },
 ];
@@ -66,7 +60,7 @@ export const contact = {
 
 export const images: LightBoxImage[] = [
   {
-    src: "images/galerie/1.webp",
+    src: "/images/galerie/1.webp",
     title: "Déboisement",
     description:
       "Début des travaux de terrassement par le déboisement de la zone",
@@ -74,74 +68,74 @@ export const images: LightBoxImage[] = [
       group: "terassement"
   },
   {
-    src: "images/galerie/3d.webp",
+    src: "/images/galerie/3d.webp",
     title: "La Future Fondation",
     description: "Modèle 3d de la fondation",
     id: 7,
     group: "à terme"
   },
   {
-    src: "images/galerie/Accueil.webp",
+    src: "/images/galerie/Accueil.webp",
     title: "Accueil de la fondation",
     description:
       "Avancé des travaux de construction de l'accueil de la fondation",
       group: "construction"
   },
   {
-    src: "images/galerie/catepilar.webp",
+    src: "/images/galerie/catepilar.webp",
     title: "Terrassement",
     description: "Début des travaux de terrassement",
     id:0,
     group: "terassement"
   },
   {
-    src: "images/galerie/catepilar2.webp",
+    src: "/images/galerie/catepilar2.webp",
     title: "Terrassement Catepilar",
     description: "Suite des travaux de terrassement",
     id:3,
     group: "terassement"
   },
   {
-    src: "images/galerie/Medecine-Generale.webp",
+    src: "/images/galerie/Medecine-Generale.webp",
     title: "Bâtiment Médecine Générale",
     description: "Gros oeuvre du bâtiment de médecine générale",
     group:"construction"
   },
   {
-    src: "images/galerie/catepilar3.webp",
+    src: "/images/galerie/catepilar3.webp",
     title: "Terrassement Catepilar",
     description: "Suite des travaux de terrassement",
     id:2,
     group: "terassement"
   },
   {
-    src: "images/galerie/study.webp",
+    src: "/images/galerie/study.webp",
     title: "Etudes topographiques",
     description: "Equipe des études topographiques pour l'analyse du terrain",
     id: 5,
     group: "terassement"
   },
   {
-    src: "images/galerie/team.webp",
+    src: "/images/galerie/team.webp",
     title: "Equipe topographique",
     description: "Equipe chargée de la réalisation de l'étude topographique",
     id: 4,
     group: "terassement"
   },
   {
-    src: "images/galerie/Urgence.webp",
+    src: "/images/galerie/Urgence.webp",
     title: "Bâtiment des urgences",
     description: "Gros oeuvre du bâtiment des urgences",
     group: "construction"
   },
   {
-    src: "images/galerie/Vue-arriere.webp",
+    src: "/images/galerie/Vue-arriere.webp",
     title: "La Fondation en vue arrière",
     description: "Vue arrière des bâtiments de la fondation",
     group: "construction"
   },
   {
-    src: "images/galerie/Vue-laterale2.webp",
+    src: "/images/galerie/Vue-laterale2.webp",
     title: "La Fondation en vue latérale",
     description: "Vue laterale des bâtiments de la fondation",
     group: "construction"

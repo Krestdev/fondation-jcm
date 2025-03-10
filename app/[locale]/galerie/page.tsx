@@ -4,9 +4,11 @@ import { RevealGroup } from "@/components/reveal";
 import { images } from "@/data/data";
 import { ImageGroup } from "@/data/type";
 import { sortLightboxImages } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 import React, { useMemo, useState } from "react";
 
 function Page() {
+  const t = useTranslations("Gallery");
   const groups:ImageGroup["group"][] = ["terassement","construction","à terme"];
   const [filter, setFilter] = useState<ImageGroup["group"]|undefined>()
   const filteredImages  = useMemo(()=>{
@@ -21,11 +23,9 @@ function Page() {
     <main>
       <header className="w-full flex items-center justify-center">
         <RevealGroup y={25} className="w-full flex flex-col gap-6 py-10 sm:py-14 items-center text-center max-w-(--breakpoint-xl)">
-          <h1>{"Galerie"}</h1>
+          <h1>{t("title")}</h1>
           <p className="text-slate-600 max-w-(--breakpoint-lg)">
-            {
-              "Plongez au cœur des actions de la Fondation Jeanne Caroline Mfege à travers notre galerie. Explorez l’évolution de notre infrastructure en construction, un projet ambitieux destiné à offrir des soins de santé de qualité aux populations rurales."
-            }
+            {t("description")}
           </p>
         </RevealGroup>
       </header>

@@ -1,3 +1,4 @@
+'use client'
 import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
@@ -10,14 +11,17 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "./ui/sheet";
+import { useTranslations } from "next-intl";
 
 function Navbar() {
+
+  const t = useTranslations("Navbar");
   const navlinks = [
-    { name: "Accueil", href: "/" },
-    { name: "À propos", href: "/a-propos" },
-    { name: "Services", href: "/#services" },
-    { name: "Galerie", href: "/galerie" },
-    { name: "Contact", href: "/contact" },
+    { name: "home", href: "/" },
+    { name: "about", href: "/a-propos" },
+    { name: "services", href: "/#services" },
+    { name: "gallery", href: "/galerie" },
+    { name: "contact", href: "/contact" },
   ];
   return (
     <div className="w-full h-20 inline-flex items-center justify-center sticky top-0 bg-white z-20">
@@ -29,13 +33,13 @@ function Navbar() {
           {navlinks.map((link, i) => (
             <Link href={link.href} key={i}>
               <Button variant={"navlink"} className="text-lg">
-                {link.name}
+                {t(link.name)}
               </Button>
             </Link>
           ))}
           <Link href={"/#don"}>
             <Button size={"main"}>
-              {"Faire un don"}
+              {t("donate")}
               <ArrowRight size={20} />
             </Button>
           </Link>
@@ -57,7 +61,7 @@ function Navbar() {
                 <SheetClose asChild key={i}>
                   <Link href={link.href}>
                     <Button variant={"ghost"} className="h-14 text-lg">
-                      {link.name}
+                      {t(link.name)}
                     </Button>
                   </Link>
                 </SheetClose>
@@ -65,7 +69,7 @@ function Navbar() {
               <SheetClose asChild>
                 <Link href={"/#don"}>
                   <Button size={"main"}>
-                    {"Faire un don"}
+                    {t("donate")}
                     <ArrowRight size={20} strokeWidth={3} />
                   </Button>
                 </Link>

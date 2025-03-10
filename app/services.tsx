@@ -11,8 +11,11 @@ import {
   import Autoplay from "embla-carousel-autoplay";
 import { services } from '@/data/data';
 import { RevealGroup } from '@/components/reveal';
+import { useTranslations } from 'next-intl';
 
 function Services() {
+
+  const t = useTranslations("Services");
     const [api, setApi] = React.useState<CarouselApi>();
     const [current, setCurrent] = React.useState(0);
 
@@ -33,11 +36,9 @@ function Services() {
         y={25} delayGap={.25}
       >
         <div className="flex flex-col items-center gap-6 text-center">
-          <span className="caption-title">{"Nos services"}</span>
+          <span className="caption-title">{t("title")}</span>
           <h2 className="max-w-(--breakpoint-lg)">
-            {
-              "La fondation en construction prévoit d’offrir des services essentiels pour garantir des soins complets et de qualité à la communauté."
-            }
+            {t("description") }
           </h2>
         </div>
         <Carousel
@@ -54,11 +55,11 @@ function Services() {
                   ++i === current && "opacity-100"
                 }`}
               >
-                <img src={service.imageURL} alt={service.name} className='w-full h-auto aspect-video rounded-2xl' />
+                <img src={service.imageURL} alt={t(service.name)} className='w-full h-auto aspect-video rounded-2xl' />
                 <div className='flex flex-col gap-2'>
-                  <h3 className="carousel-item-title">{service.name}</h3>
+                  <h3 className="carousel-item-title">{t(service.name)}</h3>
                   <p className="carousel-item-description">
-                    {service.description}
+                    {t(service.description)}
                   </p>
                 </div>
               </CarouselItem>

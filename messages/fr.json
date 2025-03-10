@@ -1,3 +1,90 @@
 {
-    "HomePage":{}
+    "Config":{
+        "siteName": "Fondation Jeanne Caroline Mfege",
+        "siteDescription": "La Fondation Jeanne Caroline MFEGE s'engage à promouvoir l'éducation, la santé, et l'autonomisation des communautés vulnérables en Afrique. Découvrez nos initiatives, projets sociaux et actions caritatives pour un avenir meilleur. Rejoignez-nous pour faire la différence."
+    },
+    "HomePage":{
+        "title": "Un geste pour sauver des vies",
+        "mainTitle1": "Un geste pour ",
+        "mainTitle2": "sauver des vies",
+        "subtitle": "Bienvenue à la Fondation Jeanne Caroline MFEGE. Parce que chaque geste compte, ensemble, nous bâtissons un avenir où la santé est une priorité. Rejoignez-nous dans notre mission pour un impact durable.",
+        "donateButton": "Faire un don",
+        "aboutTitle": "À Propos de la Fondation",
+        "aboutDescription": "La Fondation Jeanne Caroline Mfege tire son inspiration de la vie et des valeurs de Jeanne Caroline Mfege, une femme reconnue pour sa générosité et son dévouement.",
+        "aboutMore": "Découvrir la fondation",
+        "donatePre": "Donation",
+        "donateDescription": "Soutenez la Fondation Jeanne Caroline Mfege dans sa mission de fournir des soins de santé accessibles et de qualité. Votre contribution, quelle que soit sa nature ou son montant, peut faire une réelle différence dans la vie des populations vulnérables.",
+        "contactUs": "Nous contacter",
+        "number": "Numero : ",
+        "accountName": "Nom du Compte : ",
+        "bankTransfer": "Virement Bancaire",
+        "accountNumber": "Numero de compte : ",
+        "galleryCaption": "La fondation en images",
+        "galleryTitle": "Suivez l'évolution de la fondation",
+        "galleryDescription": "Plongez au cœur des actions de la Fondation Jeanne Caroline Mfege à travers notre galerie. Explorez l’évolution de notre infrastructure en construction, un projet ambitieux destiné à offrir des soins de santé de qualité aux populations rurales.",
+        "contactTitle": "Restons en contact: Ensemble, faisons la différence !",
+        "contactDescription": "Vous avez une question, souhaitez en savoir plus sur nos actions ou envisager un partenariat ? La Fondation Jeanne Caroline Mfege est à votre écoute.",
+        "phone": "Numéro de téléphone",
+        "mail": "Adresse Mail"
+    },
+    "Navbar":{
+        "home": "Accueil",
+        "about": "À Propos",
+        "services": "Services",
+        "gallery": "Galerie",
+        "contact": "Contact",
+        "donate": "Faire un Don"
+    },
+    "Footer":{
+        "description": "Un don pour la santé, une contribution précieuse qui cultive le bien-être et répand l'espoir.",
+        "rights": "Tous les droits réservés",
+        "poweredBy": "Propulsé par "
+    },
+    "AboutPage":{
+        "description": "Ensemble pour des soins de qualité et un avenir en meilleure santé",
+        "historyTitle": "Notre Histoire",
+        "the": "La ",
+        "historyDescription1": " est née d'une histoire de résilience, de foi et d'amour. Le 10 mai 2021, Jeanne Caroline MFEGE nous quittait des suites d'un cancer des ovaires, après un long combat mené avec courage et dignité. Cette épreuve, marquée par des périodes de souffrance intense et des difficultés d'accès aux soins, a été transcendée par une profonde spiritualité et une confiance en Dieu.",
+        "historyDescription2": "C'est dans cet esprit que son époux et ses proches ont souhaité perpétuer son héritage en mettant en place une fondation dédiée à l'accès aux soins pour les populations vulnérables. Portée par l'idéal de solidarité et de bienveillance qui animait Jeanne Caroline, cette initiative vise à offrir des services de santé essentiels à ceux qui en ont le plus besoin.",
+        "ourMissions": "Nos Missions",
+        "missionDescription": "Inspirée par la vie et l'engagement de Jeanne Caroline Mfege, la Fondation se consacre à :",
+        "mission1Title": "Lutter contre le cancer",
+        "mission1Description": "Organisation de campagnes régulières de dépistage pour une prise en charge précoce de cette maladie silencieuse.",
+        "mission2Title": "Améliorer l'accès aux soins",
+        "mission2Description":  "Offrir des soins de qualité aux populations rurales à mobilité réduite, en complément des actions de l’État du Cameroun.",
+        "mission3Title": "Soutenir les communautés locales",
+        "mission3Description": "Répondre aux besoins liés aux maladies endémiques comme le paludisme et la fièvre typhoïde dans les villages environnants.",
+        "valuesTitle": "Nos Valeurs",
+        "valuesDescription": "La fondation repose sur des valeurs fortes qui guident nos actions au quotidien",
+        "values1": "Solidarité",
+        "values1Description": "Offrir des soins accessibles aux plus démunis.",
+        "values2": "Humanité",
+        "values2Description": "Accueillir chaque patient avec compassion et respect.",
+        "values3": "Engagement",
+        "values3Description": "Servir avec dévouement pour améliorer la qualité de vie des populations.",
+        "values4": "Excellence",
+        "values4Description": "Garantir des soins de qualité à travers des services médicaux professionnels.",
+        "ourEngagement": "Notre Engagement envers les Populations Rurales",
+        "ourEngagementDescription": "La fondation intervient en complément des actions de l’État pour répondre aux besoins sanitaires des populations rurales. De nombreux villages avoisinants (Ekiembié 2, Eyek, Ekiembié 1, Akekela, Zili, Ebolsi, Ngou, etc.) ont un accès limité aux infrastructures de santé. Nous nous engageons à réduire cette fracture médicale en mettant en place une structure de soins de proximité."
+    },
+    "Services":{
+        "title": "Nos services",
+        "description": "La fondation en construction prévoit d’offrir des services essentiels pour garantir des soins complets et de qualité à la communauté.",
+        "im": "Imagerie médicale",
+        "imDescription":"Examens pour un diagnostic précis grâce aux technologies d’imagerie avancées.",
+        "radio": "Radiologie",
+        "radioDescription":"Services spécialisés pour l’identification et le suivi des pathologies.",
+        "pediatric": "Pédiatrie",
+        "pediatricDescription": "Soins médicaux dédiés aux enfants pour leur santé et leur bien-être.",
+        "oncology": "Oncologie",
+        "oncologyDescription": "Prise en charge des patients atteints de cancer avec des traitements adaptés.",
+        "heart": "Cardiologie",
+        "heartDescription": "Services pour le dépistage, la prévention et le traitement des maladies cardiaques.",
+        "medecine": "Médecine générale",
+        "medecineDescription": "Consultations pour une gestion globale de la santé et des soins primaires."
+    },
+    "Gallery":{
+        "title":"Galerie",
+        "description":"Plongez au cœur des actions de la Fondation Jeanne Caroline Mfege à travers notre galerie. Explorez l’évolution de notre infrastructure en construction, un projet ambitieux destiné à offrir des soins de santé de qualité aux populations rurales."
+    }
 }

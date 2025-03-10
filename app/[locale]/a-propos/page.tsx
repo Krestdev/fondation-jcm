@@ -2,8 +2,12 @@ import Reveal, { RevealGroup } from "@/components/reveal";
 import { Hand, Handshake, Heart, Star } from "lucide-react";
 import Services from "../../services";
 import Missions from "./missions";
+import { useTranslations } from "next-intl";
 
 function Page() {
+
+  const t = useTranslations();
+
   return (
     <main>
       <header className="w-full flex items-center justify-center">
@@ -11,11 +15,9 @@ function Page() {
           y={25}
           className="w-full flex flex-col gap-6 py-10 sm:py-14 items-center text-center max-w-(--breakpoint-xl)"
         >
-          <h1>{"À propos"}</h1>
+          <h1>{t("Navbar.about")}</h1>
           <p className="text-slate-600 max-w-(--breakpoint-lg)">
-            {
-              "Ensemble pour des soins de qualité et un avenir en meilleure santé"
-            }
+            {t("AboutPage.description")}
           </p>
         </RevealGroup>
       </header>
@@ -26,17 +28,13 @@ function Page() {
           delayGap={0.4}
           className="container-base flex flex-col gap-6 text-center pt-5"
         >
-          <h2>{"Notre Histoire"}</h2>
+          <h2>{t("AboutPage.historyTitle")}</h2>
           <p>
-            {"La "}
-            <strong>{"Fondation Jeanne Caroline MFEGE"}</strong>
-            {
-              " est née d'une histoire de résilience, de foi et d'amour. Le 10 mai 2021, Jeanne Caroline MFEGE nous quittait des suites d'un cancer des ovaires, après un long combat mené avec courage et dignité. Cette épreuve, marquée par des périodes de souffrance intense et des difficultés d'accès aux soins, a été transcendée par une profonde spiritualité et une confiance en Dieu."
-            }
+            {t("AboutPage.the")}
+            <strong>{t("Config.siteName")}</strong>
+            {t("AboutPage.historyDescription1")}
             <br />
-            {
-              "C'est dans cet esprit que son époux et ses proches ont souhaité perpétuer son héritage en mettant en place une fondation dédiée à l'accès aux soins pour les populations vulnérables. Portée par l'idéal de solidarité et de bienveillance qui animait Jeanne Caroline, cette initiative vise à offrir des services de santé essentiels à ceux qui en ont le plus besoin."
-            }
+            {t("AboutPage.historyDescription2")}
           </p>
         </RevealGroup>
       </section>
@@ -46,11 +44,9 @@ function Page() {
         className="container-base grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10"
       >
         <RevealGroup y={25} className="flex flex-col gap-6">
-          <h2>{"Nos Valeurs"}</h2>
+          <h2>{t("AboutPage.valuesTitle")}</h2>
           <p>
-            {
-              "La fondation repose sur des valeurs fortes qui guident nos actions au quotidien"
-            }
+            {t("AboutPage.valuesDescription")}
           </p>
           <ul role="list" className="grid gap-4 mt-3">
             <li className="flex gap-3">
@@ -58,8 +54,8 @@ function Page() {
                 <Handshake size={24} />
               </span>
               <div className="flex flex-col gap-1">
-                <h4>{"Solidarité"}</h4>
-                <p>{"Offrir des soins accessibles aux plus démunis."}</p>
+                <h4>{t("AboutPage.values1")}</h4>
+                <p>{t("AboutPage.values1Description")}</p>
               </div>
             </li>
             <li className="flex gap-3">
@@ -67,8 +63,8 @@ function Page() {
                 <Heart size={24} />
               </span>
               <div className="flex flex-col gap-1">
-                <h4>{"Humanité"}</h4>
-                <p>{"Accueillir chaque patient avec compassion et respect."}</p>
+                <h4>{t("AboutPage.values2")}</h4>
+                <p>{t("AboutPage.values2Description")}</p>
               </div>
             </li>
             <li className="flex gap-3">
@@ -76,11 +72,9 @@ function Page() {
                 <Hand size={24} />
               </span>
               <div className="flex flex-col gap-1">
-                <h4>{"Engagement"}</h4>
+                <h4>{t("AboutPage.values3")}</h4>
                 <p>
-                  {
-                    "Servir avec dévouement pour améliorer la qualité de vie des populations."
-                  }
+                  {t('AboutPage.values3Description')}
                 </p>
               </div>
             </li>
@@ -89,11 +83,9 @@ function Page() {
                 <Star size={24} />
               </span>
               <div className="flex flex-col gap-1">
-                <h4>{"Excellence"}</h4>
+                <h4>{t("AboutPage.values4")}</h4>
                 <p>
-                  {
-                    "Garantir des soins de qualité à travers des services médicaux professionnels."
-                  }
+                  {t("AboutPage.values4Description")}
                 </p>
               </div>
             </li>
@@ -101,7 +93,7 @@ function Page() {
         </RevealGroup>
         <Reveal x={25} delay={0.5} scale={0.5}>
           <img
-            src="images/values.webp"
+            src="/images/values.webp"
             alt="image"
             className="w-full h-auto aspect-[4/3] rounded-lg object-cover"
           />
@@ -111,11 +103,9 @@ function Page() {
         y={15}
         className="container-base bg-secondary text-slate-50 flex flex-col gap-6 xl:rounded-xl text-center"
       >
-        <h2>{"Notre Engagement envers les Populations Rurales"}</h2>
+        <h2>{t("AboutPage.ourEngagement")}</h2>
         <p className="text-slate-300">
-          {
-            "La fondation intervient en complément des actions de l’État pour répondre aux besoins sanitaires des populations rurales. De nombreux villages avoisinants (Ekiembié 2, Eyek, Ekiembié 1, Akekela, Zili, Ebolsi, Ngou, etc.) ont un accès limité aux infrastructures de santé. Nous nous engageons à réduire cette fracture médicale en mettant en place une structure de soins de proximité."
-          }
+          {t("AboutPage.ourEngagementDescription")}
         </p>
       </RevealGroup>
       <Services />
