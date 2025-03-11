@@ -9,7 +9,7 @@ import { PageProps } from "@/types/types";
 
 function Page({params}:PageProps) {
   const {locale} = use(params);
-
+  
   // Enable static rendering
   setRequestLocale(locale);
 

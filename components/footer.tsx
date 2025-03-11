@@ -28,29 +28,29 @@ function Footer({locale}:{locale:string}) {
         <div className="flex flex-wrap gap-6 sm:gap-8 md:gap-10 md:justify-end">
           <ul role="link" className="flex flex-col gap-1">
             <li>
-              <Link href={`/${locale}`} className="footer-link">
+              <Link href={`${locale}`} className="footer-link">
                 {t("Navbar.home")}
               </Link>
             </li>
             <li>
-              <Link href={`/${locale}/a-propos`} className="footer-link">
+              <Link href={`${locale}/a-propos`} className="footer-link">
                 {t("Navbar.about")}
               </Link>
             </li>
             <li>
-              <Link href={`/${locale}#services`} className="footer-link">
+              <Link href={`${locale}#services`} className="footer-link">
                 {t("Navbar.services")}
               </Link>
             </li>
           </ul>
           <ul role="list" className="flex flex-col gap-1">
             <li>
-              <Link href={`/${locale}/galerie`} className="footer-link">
+              <Link href={`${locale}/galerie`} className="footer-link">
                 {t("Navbar.gallery")}
               </Link>
             </li>
             <li>
-              <Link href={`/${locale}/contact`} className="footer-link">
+              <Link href={`${locale}/contact`} className="footer-link">
                 {t("HomePage.contactUs")}
               </Link>
             </li>
@@ -73,7 +73,7 @@ function Footer({locale}:{locale:string}) {
         </div>
         <span className="inline-flex gap-2 items-center">
           <LocaleSwitcher className="h-14 px-4 border-secondary bg-white text-gray-900"/>
-        <Link href={`/${locale}#don`}>
+        <Link href={`${locale}#don`}>
           <Button size={"main"} variant={"secondary"}>
             {t("HomePage.donateButton")}
             <span className="flex items-center justify-center size-9 bg-slate-900 text-slate-100">
