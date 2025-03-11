@@ -32,7 +32,7 @@ function Navbar({locale}:{locale:string}) {
         </Link>
         <span className="hidden lg:flex items-center gap-3">
           {navlinks.map((link, i) => (
-            <Link href={`${locale}/${link.href}`} key={i}>
+            <Link href={`${locale}${link.href}`} key={i}>
               <Button variant={"navlink"} className="text-lg">
                 {t(link.name)}
               </Button>
