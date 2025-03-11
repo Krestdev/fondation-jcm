@@ -34,13 +34,13 @@ export default function Home({params}:PageProps) {
         </h1>
         <p className="text-slate-600 max-w-(--breakpoint-md) text-sm sm:text-base lg:text-lg xl:text-xl">{t("subtitle")}</p>
         <div className="flex flex-wrap gap-4 items-center justify-center">
-          <Link href={"/a-propos"} locale={locale}>
+          <Link href={`/${locale}/a-propos`}>
             <Button size={"main"}>
               {t("aboutTitle")}
               <CircleArrowRight />
             </Button>
           </Link>
-          <Link href={"/#don"} locale={locale}>
+          <Link href={`/${locale}#don`}>
             <Button size={"main"} variant={"outline"}>
               {t("donateButton")}
               <ArrowRight
@@ -157,8 +157,7 @@ export default function Home({params}:PageProps) {
           {images.length > 3 && (
             <Link
               className="bg-primary h-full p-7 flex justify-center items-center rounded-lg hover:cursor-pointer opacity-40 hover:opacity-100 transition-opacity duration-300 ease-in-out"
-              href={"/galerie"}
-              locale={locale}
+              href={`/${locale}/galerie`}
             >
               <span className="size-20 bg-white text-primary flex items-center justify-center rounded-full">
                 <Plus size={80} strokeWidth={3} />

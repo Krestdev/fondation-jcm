@@ -21,7 +21,7 @@ function AboutSection({locale}:{locale:string}) {
           <h2 className="text-center max-w-(--breakpoint-lg)">
             {t("aboutDescription")}
           </h2>
-          <Link href={"/a-propos"} locale={locale}>
+          <Link href={`/${locale}/a-propos`}>
             <Button size={"main"}>
               {t("aboutMore")}
               <CircleArrowRight />
