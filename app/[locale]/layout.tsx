@@ -59,7 +59,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={cn("bg-background antialiased", bricolageFont.variable, manrope.variable)}>
         <NextIntlClientProvider messages={messages}>
-          <Navbar />
+          <Navbar locale={locale} />
           {children}
           <Footer />
         </NextIntlClientProvider>

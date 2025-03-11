@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import React from 'react'
 
-function AboutSection() {
+function AboutSection({locale}:{locale:string}) {
     const t = useTranslations("HomePage");
   return (
     <div className="container-base relative overflow-clip">
@@ -21,7 +21,7 @@ function AboutSection() {
           <h2 className="text-center max-w-(--breakpoint-lg)">
             {t("aboutDescription")}
           </h2>
-          <Link href={"/a-propos"}>
+          <Link href={"/a-propos"} locale={locale}>
             <Button size={"main"}>
               {t("aboutMore")}
               <CircleArrowRight />

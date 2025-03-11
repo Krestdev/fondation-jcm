@@ -14,7 +14,7 @@ import {
 import { useTranslations } from "next-intl";
 import LocaleSwitcher from "./localeSwitcher";
 
-function Navbar() {
+function Navbar({locale}:{locale:string}) {
 
   const t = useTranslations("Navbar");
   const navlinks = [
@@ -27,18 +27,18 @@ function Navbar() {
   return (
     <div className="w-full h-20 inline-flex items-center justify-center sticky top-0 bg-white z-20">
       <div className="inline-flex w-full max-w-(--breakpoint-xl) px-7 items-center justify-between border-b border-gray-300 h-full">
-        <Link href={"/"}>
+        <Link href={"/"} locale={locale}>
           <img src="/logo.png" alt="nav logo" className="h-12 w-auto" />
         </Link>
         <span className="hidden lg:flex items-center gap-3">
           {navlinks.map((link, i) => (
-            <Link href={link.href} key={i}>
+            <Link href={link.href} locale={locale} key={i}>
               <Button variant={"navlink"} className="text-lg">
                 {t(link.name)}
               </Button>
             </Link>
           ))}
-          <Link href={"/#don"}>
+          <Link href={"/#don"} locale={locale}>
             <Button size={"main"}>
               {t("donate")}
               <ArrowRight size={20} />
@@ -61,7 +61,7 @@ function Navbar() {
             <div role="list" className="flex flex-col">
               {navlinks.map((link, i) => (
                 <SheetClose asChild key={i}>
-                  <Link href={link.href}>
+                  <Link href={link.href} locale={locale}>
                     <Button variant={"ghost"} className="h-14 text-lg">
                       {t(link.name)}
                     </Button>
@@ -69,7 +69,7 @@ function Navbar() {
                 </SheetClose>
               ))}
               <SheetClose asChild>
-                <Link href={"/#don"}>
+                <Link href={"/#don"} locale={locale}>
                   <Button size={"main"}>
                     {t("donate")}
                     <ArrowRight size={20} strokeWidth={3} />
