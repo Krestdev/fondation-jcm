@@ -3,8 +3,15 @@ import { Hand, Handshake, Heart, Star } from "lucide-react";
 import Services from "../../services";
 import Missions from "./missions";
 import { useTranslations } from "next-intl";
+import { use } from "react";
+import { setRequestLocale } from "next-intl/server";
+import { PageProps } from "@/types/types";
 
-function Page() {
+function Page({params}:PageProps) {
+  const {locale} = use(params);
+
+  // Enable static rendering
+  setRequestLocale(locale);
 
   const t = useTranslations();
 

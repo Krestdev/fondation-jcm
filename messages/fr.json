@@ -41,6 +41,8 @@
         "poweredBy": "Propulsé par "
     },
     "AboutPage":{
+        "pageTitle": "Notre Mission et Engagement",
+        "seo":"Découvrez la Fondation Jeanne Caroline MFEGE, une organisation dédiée à l'entraide, l'éducation et l'autonomisation. Apprenez-en plus sur notre mission, nos valeurs et nos actions en faveur des communautés.",
         "description": "Ensemble pour des soins de qualité et un avenir en meilleure santé",
         "historyTitle": "Notre Histoire",
         "the": "La ",
@@ -84,7 +86,45 @@
         "medecineDescription": "Consultations pour une gestion globale de la santé et des soins primaires."
     },
     "Gallery":{
+        "pageTitle": "Nos Actions en Images",
+        "seo": "Parcourez la galerie photo de la Fondation Jeanne Caroline MFEGE et revivez nos moments forts. Découvrez nos projets humanitaires, événements et actions solidaires à travers des images inspirantes.",
         "title":"Galerie",
         "description":"Plongez au cœur des actions de la Fondation Jeanne Caroline Mfege à travers notre galerie. Explorez l’évolution de notre infrastructure en construction, un projet ambitieux destiné à offrir des soins de santé de qualité aux populations rurales."
-    }
+    },
+    "Contact": {
+        "pageTitle": "Restons en Contact",
+        "seo": "Besoin d’informations ou envie de collaborer avec la Fondation Jeanne Caroline MFEGE ? Retrouvez nos coordonnées et envoyez-nous un message via notre formulaire de contact.",
+        "title": "Contact",
+        "subtitle": "Vous avez une question, souhaitez en savoir plus sur nos actions ou envisager un partenariat ? La Fondation Jeanne Caroline Mfege est à votre écoute."
+    },
+    "Images": {
+    "deforestation": "Déforestation",
+    "deforestationText": "L'impact de la déforestation sur le site de la fondation.",
+    "futureFoundation": "La Future Fondation",
+    "futureFoundationText": "Modèle 3D de la fondation",
+    "foundationReception": "Accueil de la Fondation",
+    "foundationReceptionText": "Avancée des travaux de construction de l'accueil de la fondation",
+    "earthworks": "Terrassement",
+    "earthworksStart": "Début des travaux de terrassement",
+    "earthworksCaterpillar": "Terrassement Caterpillar",
+    "earthworksContinuation": "Suite des travaux de terrassement",
+    "generalMedicineBuilding": "Bâtiment Médecine Générale",
+    "generalMedicineBuildingText": "Gros œuvre du bâtiment de médecine générale",
+    "topographicStudies": "Études Topographiques",
+    "topographicStudiesText": "Équipe des études topographiques pour l'analyse du terrain",
+    "topographicTeam": "Équipe Topographique",
+    "topographicTeamText": "Équipe chargée de la réalisation de l'étude topographique",
+    "emergencyBuilding": "Bâtiment des Urgences",
+    "emergencyBuildingText": "Gros œuvre du bâtiment des urgences",
+    "rearViewFoundation": "La Fondation en Vue Arrière",
+    "rearViewFoundationText": "Vue arrière des bâtiments de la fondation",
+    "lateralViewFoundation": "La Fondation en Vue Latérale",
+    "lateralViewFoundationText": "Vue latérale des bâtiments de la fondation"
+  },
+  "Groups":{
+    "one":"terassement",
+    "two":"construction",
+    "three": "à terme",
+    "all": "Tout"
+  }
 }

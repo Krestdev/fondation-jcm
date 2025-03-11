@@ -1,18 +1,23 @@
-"use client";
 import Lightbox from "@/components/lightbox";
 import Reveal, { RevealGroup } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 import { contact, donate, images } from "@/data/data";
-import { motion } from "framer-motion";
 import { ArrowRight, CircleArrowRight, Mail, Phone, Plus } from "lucide-react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import Missions from "./a-propos/missions";
 import Services from "../services";
 import { useTranslations } from "next-intl";
+import {setRequestLocale} from 'next-intl/server';
+import { PageProps } from "@/types/types";
+import { use } from "react";
+import AboutSection from "./about";
 
-export default function Home() {
-  const route = useRouter();
+export default function Home({params}:PageProps) {
+  const {locale} = use(params);
+
+  // Enable static rendering
+  setRequestLocale(locale);
+  
   const t = useTranslations("HomePage");
 
   return (
@@ -69,75 +74,7 @@ export default function Home() {
           </Reveal>
         </div>
       </div>
-      <div className="container-base relative overflow-clip">
-        <RevealGroup
-          y={25}
-          delay={0.2}
-          delayGap={0.2}
-          className="flex flex-col gap-6 sm:gap-8 items-center"
-        >
-          <span className="caption-title">{t("aboutTitle")}</span>
-          <h2 className="text-center max-w-(--breakpoint-lg)">
-            {t("aboutDescription")}
-          </h2>
-          <Link href={"/a-propos"}>
-            <Button size={"main"}>
-              {t("aboutMore")}
-              <CircleArrowRight />
-            </Button>
-          </Link>
-        </RevealGroup>
-        <motion.div
-          className="absolute bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 -z-10 h-full w-auto aspect-square bg-slate-50 rounded-full opacity-40 border"
-          initial={{ scale: 0 }}
-          animate={{ scale: [1, 1.1, 1] }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 0.1,
-          }}
-        />
-        <motion.div
-          className="absolute bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 -z-10 h-4/5 w-auto aspect-square bg-slate-50 rounded-full opacity-40 border"
-          initial={{ scale: 0 }}
-          animate={{ scale: [1, 1.1, 1] }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 0.75,
-          }}
-        />
-        <motion.div
-          className="absolute bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 -z-10 h-2/3 w-auto aspect-square bg-slate-100 rounded-full opacity-40 border"
-          initial={{ scale: 0 }}
-          animate={{ scale: [1, 1.1, 1] }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 0.5,
-          }}
-        />
-        <motion.div
-          className="absolute bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 -z-10 h-1/2 w-auto aspect-square bg-slate-200 rounded-full opacity-40 border"
-          initial={{ scale: 0 }}
-          animate={{ scale: [1, 1.1, 1] }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 0.25,
-          }}
-        />
-        <motion.div
-          className="absolute bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 -z-10 h-1/3 w-auto aspect-square bg-slate-300 rounded-full opacity-40 border"
-          initial={{ scale: 0 }}
-          animate={{ scale: [1, 1.1, 1] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-        />
-      </div>
+      <AboutSection/>
       <Missions />
       <Services />
       <section id="don" className="bg-secondary/10">
@@ -218,14 +155,14 @@ export default function Home() {
             <Lightbox key={i} {...data} />
           ))}
           {images.length > 3 && (
-            <div
+            <Link
               className="bg-primary h-full p-7 flex justify-center items-center rounded-lg hover:cursor-pointer opacity-40 hover:opacity-100 transition-opacity duration-300 ease-in-out"
-              onClick={() => route.push("/galerie")}
+              href={"/galerie"}
             >
               <span className="size-20 bg-white text-primary flex items-center justify-center rounded-full">
                 <Plus size={80} strokeWidth={3} />
               </span>
-            </div>
+            </Link>
           )}
         </RevealGroup>
       </section>

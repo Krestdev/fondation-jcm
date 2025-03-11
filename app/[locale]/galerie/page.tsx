@@ -1,23 +1,16 @@
-'use client'
-import Lightbox from "@/components/lightbox";
 import { RevealGroup } from "@/components/reveal";
-import { images } from "@/data/data";
-import { ImageGroup } from "@/data/type";
-import { sortLightboxImages } from "@/lib/utils";
+import { PageProps } from "@/types/types";
 import { useTranslations } from "next-intl";
-import React, { useMemo, useState } from "react";
+import { setRequestLocale } from "next-intl/server";
+import React from "react";
+import Gallery from "./gallery";
 
-function Page() {
+function Page({params}:PageProps) {
+  const {locale} = React.use(params);
+  
+    // Enable static rendering
+    setRequestLocale(locale);
   const t = useTranslations("Gallery");
-  const groups:ImageGroup["group"][] = ["terassement","construction","à terme"];
-  const [filter, setFilter] = useState<ImageGroup["group"]|undefined>()
-  const filteredImages  = useMemo(()=>{
-    if(!filter){
-      return images;
-    } else {
-      return images.filter(x => x.group === filter)
-    }
-  }, [filter])
 
   return (
     <main>
@@ -29,17 +22,7 @@ function Page() {
           </p>
         </RevealGroup>
       </header>
-      <div className="container-base pt-0 flex flex-col gap-3">
-        <div className="flex gap-2 justify-center">
-          <span className="badge" onClick={()=>setFilter(undefined)}>{"Tout"}</span>
-          {
-            groups.map((x, i)=><span key={i} className={`badge ${filter === x && "bg-primary text-slate-50 hover:bg-primary"}`} onClick={()=>{filter === x ? setFilter(undefined) : setFilter(x)}} >{x}</span>)
-          }
-        </div>
-        <RevealGroup scale={.5} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-          { sortLightboxImages(filteredImages).map((data, i)=><Lightbox key={i} {...data}/>)}
-        </RevealGroup>
-        </div>
+      <Gallery/>
     </main>
   );
 }

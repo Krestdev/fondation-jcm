@@ -53,7 +53,7 @@ function Navbar() {
           <SheetContent side={"left"}>
             <SheetHeader className="h-16 w-full border-b border-gray-200">
               <SheetTitle>
-                <img src="logo.png" alt="logo" className="h-12 w-auto" />
+                <img src="/logo.png" alt="logo" className="h-12 w-auto" />
               </SheetTitle>
             </SheetHeader>
             <div role="list" className="flex flex-col">

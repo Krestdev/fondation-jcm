@@ -1,12 +1,19 @@
 import React from "react";
 import { Metadata } from "next";
 import { config } from "../../config";
+import { Props } from "@/types/types";
+import { getTranslations } from "next-intl/server";
 
-
-export const metadata:Metadata = {
-    title: `À Propos - ${config.siteName}`,
-    description: "La Fondation Jeanne Caroline Mfege tire son inspiration de la vie et des valeurs de Jeanne Caroline Mfege, une femme reconnue pour sa générosité et son dévouement."
-} 
+export async function generateMetadata(props: Omit<Props, 'children'>): Promise<Metadata> {
+    const {locale} = await props.params;
+    
+    const t = await getTranslations({locale})
+  
+    return {
+        title: `${t("AboutPage.pageTitle")} - ${t(config.siteName)}`,
+        description: t("AboutPage.seo")
+    };
+  } 
 
 export default function Layout({children}:{children: React.ReactNode}){
     return (

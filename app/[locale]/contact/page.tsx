@@ -1,18 +1,26 @@
 import { RevealGroup } from '@/components/reveal'
 import { contact, donate } from '@/data/data'
+import { PageProps } from '@/types/types'
 import { Mail, Phone } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+import { setRequestLocale } from 'next-intl/server'
 import React from 'react'
 
-function Page() {
+function Page({params}:PageProps) {
+  const {locale} = React.use(params);
+
+  // Enable static rendering
+  setRequestLocale(locale);
+
+  const t = useTranslations();
+
   return (
     <main>
       <header className="w-full flex items-center justify-center">
         <RevealGroup y={25} className="w-full flex flex-col gap-6 py-10 sm:py-14 items-center text-center max-w-(--breakpoint-xl)">
-          <h1>{"Contact"}</h1>
+          <h1>{t("Contact.title")}</h1>
           <p className="text-slate-600 max-w-(--breakpoint-lg)">
-            {
-              "Vous avez une question, souhaitez en savoir plus sur nos actions ou envisager un partenariat ? La Fondation Jeanne Caroline Mfege est à votre écoute."
-            }
+            {t("Contact.subtitle")}
           </p>
         </RevealGroup>
       </header>
@@ -23,7 +31,7 @@ function Page() {
               <Phone size={24}/>
             </span>
             <div className='flex flex-col'>
-              <p>{"Numéro de Téléphone"}</p>
+              <p>{t("HomePage.phone")}</p>
               <h4>{donate.orangemoney}</h4>
             </div>
           </a>
@@ -32,7 +40,7 @@ function Page() {
               <Mail size={24}/>
             </span>
             <div className='flex flex-col w-full overflow-hidden'>
-              <p>{"Adresse Mail"}</p>
+              <p>{t("HomePage.mail")}</p>
               <h4>{contact.email}</h4>
             </div>
           </a>

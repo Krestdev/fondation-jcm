@@ -41,6 +41,8 @@
     "poweredBy": "Powered by "
   },
   "AboutPage": {
+    "pageTitle": "Our Mission & Commitment",
+    "seo": "Discover the Jeanne Caroline MFEGE Foundation, an organization dedicated to support, education, and empowerment. Learn more about our mission, values, and actions for communities.",
     "description": "Together for quality healthcare and a healthier future",
     "historyTitle": "Our History",
     "the": "The ",
@@ -83,8 +85,46 @@
     "medecine": "General Medicine",
     "medecineDescription": "Consultations for overall health management and primary care."
   },
-  "Gallery":{
-      "title":"Gallery",
-      "description":"Dive into the heart of the Jeanne Caroline Mfege Foundation's actions through our gallery. Explore the evolution of our infrastructure under construction, an ambitious project designed to offer quality healthcare to rural populations."
-}
+  "Gallery": {
+    "pageTitle": "Our Actions in Pictures",
+    "seo": "Browse the Jeanne Caroline MFEGE Foundation’s gallery and relive our key moments. Explore our humanitarian projects, events, and solidarity actions through inspiring images.",
+    "title": "Gallery",
+    "description": "Dive into the heart of the Jeanne Caroline Mfege Foundation's actions through our gallery. Explore the evolution of our infrastructure under construction, an ambitious project designed to offer quality healthcare to rural populations."
+  },
+  "Contact": {
+    "pageTitle": "Get in Touch",
+    "seo": "Need information or want to collaborate with the Jeanne Caroline MFEGE Foundation? Find our contact details and send us a message through our contact form.",
+    "title": "Contact",
+    "subtitle": "Do you have a question, want to know more about our actions or consider a partnership? The Jeanne Caroline Mfege Foundation is here to listen."
+  },
+  "Images": {
+    "deforestation": "Deforestation",
+    "deforestationText": "The impact of deforestation on the foundation's site.",
+    "futureFoundation": "The Future Foundation",
+    "futureFoundationText": "3D model of the foundation",
+    "foundationReception": "Foundation Reception",
+    "foundationReceptionText": "Progress of the construction of the foundation's reception area",
+    "earthworks": "Earthworks",
+    "earthworksStart": "Start of earthworks",
+    "earthworksCaterpillar": "Earthworks Caterpillar",
+    "earthworksContinuation": "Continuation of earthworks",
+    "generalMedicineBuilding": "General Medicine Building",
+    "generalMedicineBuildingText": "Structural work on the general medicine building",
+    "topographicStudies": "Topographic Studies",
+    "topographicStudiesText": "Topographic study team analyzing the terrain",
+    "topographicTeam": "Topographic Team",
+    "topographicTeamText": "Team responsible for carrying out the topographic study",
+    "emergencyBuilding": "Emergency Building",
+    "emergencyBuildingText": "Structural work on the emergency building",
+    "rearViewFoundation": "The Foundation in Rear View",
+    "rearViewFoundationText": "Rear view of the foundation buildings",
+    "lateralViewFoundation": "The Foundation in Lateral View",
+    "lateralViewFoundationText": "Lateral view of the foundation buildings"
+  },
+  "Groups": {
+    "one": "terassement",
+    "two": "construction",
+    "three": "forward",
+    "all": "All"
+  }
 }

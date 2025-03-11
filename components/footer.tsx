@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 import { config } from "@/app/config";
 import { useTranslations } from "next-intl";
+import LocaleSwitcher from "./localeSwitcher";
 
 function Footer() {
 
@@ -58,7 +59,7 @@ function Footer() {
       </div>
       <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-slate-800 flex justify-between flex-wrap gap-6 sm:gap-10">
         <div className="flex flex-col gap-1">
-          <p className="text-slate-300">{`© Copyright 2025 ${config.siteName}. ${t("Footer.rights")}`}</p>
+          <p className="text-slate-300">{`© Copyright 2025 ${t(config.siteName)}. ${t("Footer.rights")}`}</p>
           <p className="text-slate-400">
             {t("Footer.poweredBy")}
             <a
@@ -70,6 +71,8 @@ function Footer() {
             </a>
           </p>
         </div>
+        <span className="inline-flex gap-2 items-center">
+          <LocaleSwitcher className="h-14 px-4 border-secondary bg-white text-gray-900"/>
         <Link href={"/#don"}>
           <Button size={"main"} variant={"secondary"}>
             {t("HomePage.donateButton")}
@@ -78,6 +81,7 @@ function Footer() {
             </span>
           </Button>
         </Link>
+        </span>
       </div>
     </footer>
   );

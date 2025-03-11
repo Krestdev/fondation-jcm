@@ -61,83 +61,82 @@ export const contact = {
 export const images: LightBoxImage[] = [
   {
     src: "/images/galerie/1.webp",
-    title: "Déboisement",
-    description:
-      "Début des travaux de terrassement par le déboisement de la zone",
-      id:1,
-      group: "terassement"
+    title: "Images.deforestation",
+    description: "Images.deforestationText",
+    id: 1,
+    group: "terassement",
   },
   {
     src: "/images/galerie/3d.webp",
-    title: "La Future Fondation",
-    description: "Modèle 3d de la fondation",
+    title: "Images.futureFoundation",
+    description: "Images.futureFoundationText",
     id: 7,
-    group: "à terme"
+    group: "à terme",
   },
   {
     src: "/images/galerie/Accueil.webp",
-    title: "Accueil de la fondation",
-    description:
-      "Avancé des travaux de construction de l'accueil de la fondation",
-      group: "construction"
+    title: "Images.foundationReception",
+    description: "Images.foundationReceptionText",
+    group: "construction",
   },
   {
     src: "/images/galerie/catepilar.webp",
-    title: "Terrassement",
-    description: "Début des travaux de terrassement",
-    id:0,
-    group: "terassement"
+    title: "Images.earthworks",
+    description: "Images.earthworksStart",
+    id: 0,
+    group: "terassement",
   },
   {
     src: "/images/galerie/catepilar2.webp",
-    title: "Terrassement Catepilar",
-    description: "Suite des travaux de terrassement",
-    id:3,
-    group: "terassement"
+    title: "Images.earthworksCaterpillar",
+    description: "Images.earthworksContinuation",
+    id: 3,
+    group: "terassement",
   },
   {
     src: "/images/galerie/Medecine-Generale.webp",
-    title: "Bâtiment Médecine Générale",
-    description: "Gros oeuvre du bâtiment de médecine générale",
-    group:"construction"
+    title: "Images.generalMedicineBuilding",
+    description: "Images.generalMedicineBuildingText",
+    group: "construction",
   },
   {
     src: "/images/galerie/catepilar3.webp",
-    title: "Terrassement Catepilar",
-    description: "Suite des travaux de terrassement",
-    id:2,
-    group: "terassement"
+    title: "Images.earthworksCaterpillar",
+    description: "Images.earthworksContinuation",
+    id: 2,
+    group: "terassement",
   },
   {
     src: "/images/galerie/study.webp",
-    title: "Etudes topographiques",
-    description: "Equipe des études topographiques pour l'analyse du terrain",
+    title: "Images.topographicStudies",
+    description: "Images.topographicStudiesText",
     id: 5,
-    group: "terassement"
+    group: "terassement",
   },
   {
     src: "/images/galerie/team.webp",
-    title: "Equipe topographique",
-    description: "Equipe chargée de la réalisation de l'étude topographique",
+    title: "Images.topographicTeam",
+    description: "Images.topographicTeamText",
     id: 4,
-    group: "terassement"
+    group: "terassement",
   },
   {
     src: "/images/galerie/Urgence.webp",
-    title: "Bâtiment des urgences",
-    description: "Gros oeuvre du bâtiment des urgences",
-    group: "construction"
+    title: "Images.emergencyBuilding",
+    description: "Images.emergencyBuildingText",
+    group: "construction",
   },
   {
     src: "/images/galerie/Vue-arriere.webp",
-    title: "La Fondation en vue arrière",
-    description: "Vue arrière des bâtiments de la fondation",
-    group: "construction"
+    title: "Images.rearViewFoundation",
+    description: "Images.rearViewFoundationText",
+    group: "construction",
   },
   {
     src: "/images/galerie/Vue-laterale2.webp",
-    title: "La Fondation en vue latérale",
-    description: "Vue laterale des bâtiments de la fondation",
-    group: "construction"
+    title: "Images.lateralViewFoundation",
+    description: "Images.lateralViewFoundationText",
+    group: "construction",
   },
 ];
+

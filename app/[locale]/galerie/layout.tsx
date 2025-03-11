@@ -1,12 +1,20 @@
 import React from "react";
 import { Metadata } from "next";
 import { config } from "../../config";
+import { Props } from "@/types/types";
+import { getTranslations } from "next-intl/server";
 
 
-export const metadata:Metadata = {
-    title: `Galerie - ${config.siteName}`,
-    description: "Plongez au cœur des actions de la Fondation Jeanne Caroline Mfege à travers notre galerie."
-} 
+export async function generateMetadata(props: Omit<Props, 'children'>): Promise<Metadata> {
+    const {locale} = await props.params;
+    
+    const t = await getTranslations({locale})
+  
+    return {
+        title: `${t("Gallery.pageTitle")} - ${t(config.siteName)}`,
+        description: t("Gallery.seo")
+    };
+  } 
 
 export default function Layout({children}:{children: React.ReactNode}){
     return (

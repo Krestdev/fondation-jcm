@@ -1,5 +1,5 @@
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Bricolage_Grotesque, Manrope } from "next/font/google";
@@ -8,6 +8,7 @@ import Footer from "@/components/footer";
 import { config } from "../config";
 import { Metadata } from "next";
 import { cn } from "@/lib/utils";
+import { Props } from "@/types/types";
 
 const bricolageFont = Bricolage_Grotesque({
   variable: "--font-bricolage",
@@ -18,7 +19,10 @@ const manrope = Manrope({
   variable: "--font-manrope",
   subsets: ["latin"],
 });
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+
+export async function generateMetadata(props: Omit<Props, 'children'>): Promise<Metadata> {
+  const {locale} = await props.params;
+  
   const t = await getTranslations({locale})
 
   return {
@@ -44,6 +48,8 @@ export default async function LocaleLayout({
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
+  // Enable static rendering
+  setRequestLocale(locale);
 
   // Providing all messages to the client
   // side is the easiest way to get started
@@ -60,4 +66,8 @@ export default async function LocaleLayout({
       </body>
     </html>
   );
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({locale}));
 }
