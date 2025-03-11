@@ -12,6 +12,7 @@ import {
   SheetTrigger,
 } from "./ui/sheet";
 import { useTranslations } from "next-intl";
+import LocaleSwitcher from "./localeSwitcher";
 
 function Navbar() {
 
@@ -43,6 +44,7 @@ function Navbar() {
               <ArrowRight size={20} />
             </Button>
           </Link>
+          <LocaleSwitcher className="h-14 border-none shadow-none"/>
         </span>
         <Sheet>
           <SheetTrigger asChild className="inline-flex lg:hidden">
@@ -74,6 +76,7 @@ function Navbar() {
                   </Button>
                 </Link>
               </SheetClose>
+              <LocaleSwitcher className="h-14 mt-4"/>
             </div>
           </SheetContent>
         </Sheet>
