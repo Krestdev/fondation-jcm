@@ -119,12 +119,23 @@
     "rearViewFoundation": "The Foundation in Rear View",
     "rearViewFoundationText": "Rear view of the foundation buildings",
     "lateralViewFoundation": "The Foundation in Lateral View",
-    "lateralViewFoundationText": "Lateral view of the foundation buildings"
+    "lateralViewFoundationText": "Lateral view of the foundation buildings",
+    "foundationUnderConstruction": "Foundation under construction",
+    "foundationUnderConstructionText": "View of earthworks and foundation pouring, a crucial step to ensure the stability of the structure.",
+    "concreteStructure": "Concrete structure assembly",
+    "concreteStructureText": "Construction of reinforced concrete columns and beams, ensuring the strength and durability of the building.",
+    "formworkInstallation": "Formwork installation",
+    "formworkInstallationText": "Setting up formwork for slab and beam pouring, a key step in the construction process.",
+    "reinforcement": "Reinforcement works",
+    "reinforcementText": "Positioning of metal reinforcements before concrete pouring, ensuring the structure's strength.",
+    "generalViewSite": "General view of the construction site",
+    "generalViewSiteText": "Global overview of the construction site, showing work progress and team coordination."
   },
   "Groups": {
     "one": "terassement",
     "two": "construction",
     "three": "forward",
+    "four": "Foundation & Beam",
     "all": "All"
   }
 }

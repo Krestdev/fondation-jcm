@@ -119,12 +119,23 @@
     "rearViewFoundation": "La Fondation en Vue Arrière",
     "rearViewFoundationText": "Vue arrière des bâtiments de la fondation",
     "lateralViewFoundation": "La Fondation en Vue Latérale",
-    "lateralViewFoundationText": "Vue latérale des bâtiments de la fondation"
+    "lateralViewFoundationText": "Vue latérale des bâtiments de la fondation",
+    "foundationUnderConstruction": "Fondation en cours de réalisation",
+    "foundationUnderConstructionText": "Vue des travaux de terrassement et de coulage des fondations, étape essentielle pour assurer la solidité de la structure.",
+    "concreteStructure": "Montage de la structure en béton",
+    "concreteStructureText": "Élévation des poteaux et poutres en béton armé, garantissant la résistance et la durabilité du bâtiment.",
+    "formworkInstallation": "Installation du coffrage",
+    "formworkInstallationText": "Mise en place du coffrage pour le coulage des dalles et poutres, étape clé du processus de construction.",
+    "reinforcement": "Travaux de ferraillage",
+    "reinforcementText": "Positionnement des armatures métalliques avant le coulage du béton, garantissant la solidité de la structure.",
+    "generalViewSite": "Vue d’ensemble du chantier",
+    "generalViewSiteText": "Aperçu global du site de construction, illustrant l’avancement des travaux et la coordination des équipes."
   },
   "Groups":{
     "one":"terassement",
     "two":"construction",
     "three": "à terme",
+    "four": "Fondation & Poutre",
     "all": "Tout"
   }
 }

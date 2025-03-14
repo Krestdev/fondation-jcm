@@ -13,6 +13,7 @@ function Gallery() {
     { group: "terassement", lang: "one" },
     { group: "construction", lang: "two" },
     { group: "à terme", lang: "three" },
+    { group: "Fondation & Poutre", lang: "four" },
   ];
   const [filter, setFilter] = useState<ImageGroup["group"] | undefined>();
   const filteredImages = useMemo(() => {

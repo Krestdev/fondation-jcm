@@ -138,5 +138,35 @@ export const images: LightBoxImage[] = [
     description: "Images.lateralViewFoundationText",
     group: "construction",
   },
+  {
+    src: "/images/galerie/foundation_ground.webp",
+    title: "Images.foundationUnderConstruction",
+    description: "Images.foundationUnderConstructionText",
+    group: "Fondation & Poutre"
+  },
+  {
+    src: "/images/galerie/foundation_base.webp",
+    title: "Images.concreteStructure",
+    description: "Images.concreteStructureText",
+    group: "Fondation & Poutre"
+  },
+  {
+    src: "/images/galerie/ground_floor.webp",
+    title: "Images.formworkInstallation",
+    description: "Images.formworkInstallationText",
+    group: "Fondation & Poutre"
+  },
+  {
+    src: "/images/galerie/foundation_workers.webp",
+    title: "Images.reinforcement",
+    description: "Images.reinforcementText",
+    group: "Fondation & Poutre"
+  },
+  {
+    src: "/images/galerie/underground.webp",
+    title: "Images.generalViewSite",
+    description: "Images.generalViewSiteText",
+    group: "Fondation & Poutre"
+  },
 ];
 
