@@ -38,7 +38,7 @@ function Navbar({locale}:{locale:string}) {
               </Button>
             </Link>
           ))}
-          <Link href={`${locale}#don`}>
+          <Link href={`/${locale}#don`}>
             <Button size={"main"}>
               {t("donate")}
               <ArrowRight size={20} />
@@ -69,7 +69,7 @@ function Navbar({locale}:{locale:string}) {
                 </SheetClose>
               ))}
               <SheetClose asChild>
-                <Link href={`${locale}#don`}>
+                <Link href={`/${locale}#don`}>
                   <Button size={"main"}>
                     {t("donate")}
                     <ArrowRight size={20} strokeWidth={3} />
