@@ -25,7 +25,7 @@ function Gallery() {
   }, [filter]);
   return (
     <div className="container-base pt-0 flex flex-col gap-3">
-      <div className="flex gap-2 justify-center">
+      <div className="flex gap-2 justify-center flex-wrap">
         <span className="badge" onClick={() => setFilter(undefined)}>
           {t("all")}
         </span>

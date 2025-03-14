@@ -32,7 +32,7 @@ function Navbar({locale}:{locale:string}) {
         </Link>
         <span className="hidden lg:flex items-center gap-3">
           {navlinks.map((link, i) => (
-            <Link href={`${locale}${link.href}`} key={i}>
+            <Link href={`/${locale}${link.href}`} key={i}>
               <Button variant={"navlink"} className="text-lg">
                 {t(link.name)}
               </Button>
@@ -61,7 +61,7 @@ function Navbar({locale}:{locale:string}) {
             <div role="list" className="flex flex-col">
               {navlinks.map((link, i) => (
                 <SheetClose asChild key={i}>
-                  <Link href={`${locale}/${link.href}`}>
+                  <Link href={`/${locale}${link.href}`}>
                     <Button variant={"ghost"} className="h-14 text-lg">
                       {t(link.name)}
                     </Button>
