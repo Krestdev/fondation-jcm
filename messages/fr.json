@@ -104,10 +104,10 @@
     "futureFoundationText": "Modèle 3D de la fondation",
     "foundationReception": "Accueil de la Fondation",
     "foundationReceptionText": "Avancée des travaux de construction de l'accueil de la fondation",
-    "earthworks": "Terrassement",
-    "earthworksStart": "Début des travaux de terrassement",
-    "earthworksCaterpillar": "Terrassement Caterpillar",
-    "earthworksContinuation": "Suite des travaux de terrassement",
+    "earthworks": "Déboisement",
+    "earthworksStart": "Opération de déforestation du terrain à l'aide d'un bulldozer",
+    "earthworksCaterpillar": "Déboisement",
+    "earthworksContinuation": "Suite du déboisement du terrain",
     "generalMedicineBuilding": "Bâtiment Médecine Générale",
     "generalMedicineBuildingText": "Gros œuvre du bâtiment de médecine générale",
     "topographicStudies": "Études Topographiques",
@@ -129,13 +129,18 @@
     "reinforcement": "Travaux de ferraillage",
     "reinforcementText": "Positionnement des armatures métalliques avant le coulage du béton, garantissant la solidité de la structure.",
     "generalViewSite": "Vue d’ensemble du chantier",
-    "generalViewSiteText": "Aperçu global du site de construction, illustrant l’avancement des travaux et la coordination des équipes."
+    "generalViewSiteText": "Aperçu global du site de construction, illustrant l’avancement des travaux et la coordination des équipes.",
+    "tera":"Terrassement",
+    "teraText": "Terrain déboisé sur lequel des travaux de terrassement sont en cours",
+    "rendered":"Accueil de la Fondation",
+    "renderedText":"Vue 3D de l'Accueil de la fondation"
   },
   "Groups":{
-    "one":"terassement",
-    "two":"construction",
-    "three": "à terme",
+    "one":"déforestation",
+    "two":"Vue actuelle",
+    "three": "Vue finale",
     "four": "Fondation & Poutre",
+    "five": "Terrassement",
     "all": "Tout"
   }
 }

@@ -10,10 +10,11 @@ import React, { useMemo, useState } from "react";
 function Gallery() {
     const t = useTranslations("Groups");
   const groups: GroupTag[] = [
-    { group: "terassement", lang: "one" },
-    { group: "construction", lang: "two" },
-    { group: "à terme", lang: "three" },
+    { group: "deforestation", lang: "one" },
+    { group: "vue actuelle", lang: "two" },
+    { group: "vue finale", lang: "three" },
     { group: "Fondation & Poutre", lang: "four" },
+    { group: "terrassement", lang: "five" },
   ];
   const [filter, setFilter] = useState<ImageGroup["group"] | undefined>();
   const filteredImages = useMemo(() => {

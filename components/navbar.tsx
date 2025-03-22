@@ -27,18 +27,18 @@ function Navbar({locale}:{locale:string}) {
   return (
     <div className="w-full h-20 inline-flex items-center justify-center sticky top-0 bg-white z-20">
       <div className="inline-flex w-full max-w-(--breakpoint-xl) px-7 items-center justify-between border-b border-gray-300 h-full">
-        <Link href={`/${locale}`}>
+        <Link href={`/`}>
           <img src="/logo.png" alt="nav logo" className="h-12 w-auto" />
         </Link>
         <span className="hidden lg:flex items-center gap-3">
           {navlinks.map((link, i) => (
-            <Link href={`/${locale}${link.href}`} key={i}>
+            <Link href={link.href} key={i}>
               <Button variant={"navlink"} className="text-lg">
                 {t(link.name)}
               </Button>
             </Link>
           ))}
-          <Link href={`/${locale}#don`}>
+          <Link href={`/#don`}>
             <Button size={"main"}>
               {t("donate")}
               <ArrowRight size={20} />
@@ -61,7 +61,7 @@ function Navbar({locale}:{locale:string}) {
             <div role="list" className="flex flex-col">
               {navlinks.map((link, i) => (
                 <SheetClose asChild key={i}>
-                  <Link href={`/${locale}${link.href}`}>
+                  <Link href={link.href}>
                     <Button variant={"ghost"} className="h-14 text-lg">
                       {t(link.name)}
                     </Button>
@@ -69,7 +69,7 @@ function Navbar({locale}:{locale:string}) {
                 </SheetClose>
               ))}
               <SheetClose asChild>
-                <Link href={`/${locale}#don`}>
+                <Link href={`/#don`}>
                   <Button size={"main"}>
                     {t("donate")}
                     <ArrowRight size={20} strokeWidth={3} />

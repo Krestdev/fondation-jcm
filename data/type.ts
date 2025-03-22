@@ -5,7 +5,7 @@ export interface LightboxDataitem {
 }
 
 export type ImageGroup = {
-    group: "terassement"|"à terme"|"construction"|"Fondation & Poutre";
+    group: "deforestation"|"vue finale"|"vue actuelle"|"Fondation & Poutre"|"terrassement";
 }
 export interface GroupTag extends ImageGroup {
     lang:string;
